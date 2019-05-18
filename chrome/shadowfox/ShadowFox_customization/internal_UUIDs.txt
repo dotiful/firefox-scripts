@@ -1,0 +1,6 @@
+formautofill@mozilla.org=00e1560c-f9cd-6a45-99eb-3628ed6be253
+fxmonitor@mozilla.org=675f786a-b26f-614f-9d5e-4d66ed8a03ce
+screenshots@mozilla.org=c70244e7-1327-6d4d-b2f9-304bc5d72780
+webcompat-reporter@mozilla.org=6d25299b-2a26-3d47-92a9-e8cfe7766c79
+webcompat@mozilla.org=fc05aa9d-59dc-b54a-88fb-2353056811ab
+hotfix-update-xpi-intermediate@mozilla.com=cb5744bf-18f3-7b4b-b5cb-93817b2eeeda
