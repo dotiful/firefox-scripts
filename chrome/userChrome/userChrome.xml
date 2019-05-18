@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+  userChrome.xml
+  Allows *.uc.js files placed in the chrome folder to run
+  This enables some functionality that's unavailable to add-ons,
+  like opening a custom local page in each new tab
+
+  Copyright (c) 2017 Haggai Nuchi
+  Available for use under the MIT License:
+  https://opensource.org/licenses/MIT
+-->
+
+<bindings id="generalBindings"
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="js" extends="chrome://global/content/bindings/toolbarbutton.xml#menu">
+	<implementation>
+	  <constructor>
+		<![CDATA[
+
+		  function load_js_script(js_file_name) {
+		    Services.scriptloader.loadSubScript(Components.stack.filename.substring(0,
+				Components.stack.filename.lastIndexOf("/") + 1) + js_file_name, window);
+		  }
+
+		  load_js_script("Dblclick_ReloadTab.uc.js");
+
+		  // load other scripts
+		  // load_js_script("my_other_script_name.uc.js");
+		]]>
+	  </constructor>
+	</implementation>
+  </binding>
+</bindings>
