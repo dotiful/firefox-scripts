@@ -4,7 +4,36 @@
 
 A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) designed to harden browser settings and make it more secure.
 
+## userChrome.js
+
+- [aboutbutton](https://github.com/Endor8/userChrome.js/tree/master/aboutbutton)
+- [move reload into urlbar](https://github.com/Endor8/userChrome.js/blob/master/Updates%202019/move_reload_into_url.uc.js)
+- [About Config Button](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigbutton)
+- [About Config Multiple Selection](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigmultipleselection)
+
 ## References
+
+### Customizing Firefox
+<!-- #region -->
+- <details>
+  <summary>Themes</summary>
+
+  - [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - A universal dark theme for Firefox
+
+  - [Quantum-Nox-Firefox-Dark-Full-Theme](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) - These usercontent and userchrome files will give a full themed dark color to Firefox Quantum, menus and dialogs included, as well as the scrollbars
+
+</details>
+<!-- #endregion -->
+
+- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - user.js -- Firefox configuration hardening
+
+- [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
+
+- [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - Custom CSS tweaks for Firefox Quantum
+
+- [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - A community maintained repository of userChrome.css tweaks for Firefox
+
+- [ardiman/userChrome.js](https://github.com/ardiman/userChrome.js) - Skripte für die Firefox-Erweiterung userChromeJS
 
 ### Other documentation
 
@@ -13,16 +42,6 @@ A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozi
 - [Overview of about:config security and privacy preferences](https://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/)
 
 - [userChrome.css for Customizing Firefox](https://www.userchrome.org)
-
-### Customizing Firefox
-
-- [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - A universal dark theme for Firefox
-
-- [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - Custom CSS tweaks for Firefox Quantum
-
-- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - user.js -- Firefox configuration hardening
-
-- [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
 
 ## Extensions
 
@@ -59,21 +78,21 @@ A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozi
 
     ### Translation panel
 
-    | **key**                              | **value**                                                                           |
-    |--------------------------------------|-------------------------------------------------------------------------------------|
-    | Width                                | 480px                                                                               |
-    | Height                               | 320px                                                                               |
-    | Font size                            | 14px                                                                                |
-    | Display position - Reference point   | Clicked Point                                                                       |
-    | Display position - Direction         | Bottom                                                                              |
-    | Display position - Offset            | 20                                                                                  |
-    | Font color of translation result     | `#ffffff` ![](https://placehold.it/16/ffffff/000000?text=+)<br>`rgb(255, 255, 255)` |
-    | Font color of translation candidates | `#e3ded5` ![](https://placehold.it/16/e3ded5/000000?text=+)<br>`rgb(227, 222, 213)` |
-    | Background-color                     | `#007997` ![](https://placehold.it/16/007997/007896?text=+)<br>`rgb(0, 121, 151)`   |
+    | **key**                              | **value**                                                                                |
+    |--------------------------------------|------------------------------------------------------------------------------------------|
+    | Width                                | 480px                                                                                    |
+    | Height                               | 320px                                                                                    |
+    | Font size                            | 14px                                                                                     |
+    | Display position - Reference point   | Clicked Point                                                                            |
+    | Display position - Direction         | Bottom                                                                                   |
+    | Display position - Offset            | 20                                                                                       |
+    | Font color of translation result     | `#ffffff` ![color](https://placehold.it/16/ffffff/000000?text=+)<br>`rgb(255, 255, 255)` |
+    | Font color of translation candidates | `#e3ded5` ![color](https://placehold.it/16/e3ded5/000000?text=+)<br>`rgb(227, 222, 213)` |
+    | Background-color                     | `#007997` ![color](https://placehold.it/16/007997/007896?text=+)<br>`rgb(0, 121, 151)`   |
 
     ### Preview
 
-    ![](https://i.imgur.com/3czIumx.png)
+    ![screenshoot](https://i.imgur.com/3czIumx.png)
 
     ----
   </details>
