@@ -1,0 +1,7 @@
+{
+  "eslint.enable": false,
+  "files.defaultLanguage": "javascript",
+  "files.exclude": {
+    ".markdownlint.json": true
+  }
+}

@@ -1,0 +1,70 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+@-moz-document url("chrome://browser/content/browser.xul") {
+vbox#browser-bottombox {
+    -moz-binding: url("./bindings/toolbars.xml#toolbars") !important;
+}
+
+toolbarpaletteitem[place="palette"] > toolbaritem.add-additional-springs {
+    background: url("./svg/spring.svg") rgba(255,255,255,0.6) center no-repeat;
+    border: none !important;
+    outline: 1px solid GrayText;
+    outline-offset: -1px;
+    min-height: 17px;
+}
+
+toolbarpaletteitem:-moz-any([place="toolbar"],[place="panel"],[place="menu-panel"]) > toolbaritem.add-additional-springs {
+    background: url("./svg/spring.svg") rgba(255,255,255,0.6) center no-repeat;
+    border: none !important;
+    min-width: 34px;
+    min-height: 14px;
+    outline: 1px solid GrayText;
+    outline-offset: -1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+toolbarpaletteitem[place="palette"][id*="add-additional-bottom-spring"] {
+    vertical-align: top;
+}
+
+toolbarpaletteitem[place] > toolbaritem.add-additional-springs {
+    -moz-window-dragging: no-drag !important;
+}
+
+#add-restart-app {
+    list-style-image: url("./svg/restart-app-16.svg") !important;
+}
+
+#add-additional-bottom-toggle-button {
+    list-style-image: url("./svg/configure-toolbars-16.svg") !important;
+}
+
+#add-additional-bottom-bar {
+    -moz-appearance: none !important;
+    border: none !important;
+    background-clip: border-box !important;
+    background-color: var(--chrome-secondary-background-color, transparent) !important;
+    background-image: none !important;
+    color: var(--chrome-color, inherit) !important;
+}
+
+#add-additional-bottom-bar:not(:-moz-lwtheme) {
+    background-color: var(--toolbar-bgcolor, -moz-Dialog) !important;
+    color: var(--toolbar-color, -moz-DialogText) !important;
+}
+
+#add-additional-bottom-bar {
+    border-top: 1px solid var(--toolbox-border-bottom-color, rgba(0,0,0,0.1)) !important;
+}
+
+#add-additional-bottom-bar[collapsed="true"][customizable="true"][customizing="true"] {
+    visibility: collapse !important;
+}
+}
+
+#PlacesToolbarItems > toolbarseparator {
+    min-width: 5px !important;
+    width: 5px !important;
+    border: 5px solid red !important;
+}

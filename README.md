@@ -5,7 +5,6 @@
 A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) designed to harden browser settings and make it more secure.
 
 ## userChrome.js
-
 - [aboutbutton](https://github.com/Endor8/userChrome.js/tree/master/aboutbutton)
 - [move reload into urlbar](https://github.com/Endor8/userChrome.js/blob/master/Updates%202019/move_reload_into_url.uc.js)
 - [About Config Button](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigbutton)
@@ -25,9 +24,13 @@ A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozi
 </details>
 <!-- #endregion -->
 
+- [File I/O | MDN](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/File_I_O#Getting_special_files) - a full listing of directory tokens
+
 - [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - user.js -- Firefox configuration hardening
 
 - [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
+
+- [Aris-t2/CustomJSforFx](https://github.com/Aris-t2/CustomJSforFx) - custom scripts
 
 - [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - Custom CSS tweaks for Firefox Quantum
 

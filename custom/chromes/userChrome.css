@@ -1,0 +1,16 @@
+/* 
+  Copyright (c) 2017 Haggai Nuchi
+  Available for use under the MIT License:
+  https://opensource.org/licenses/MIT
+*/
+
+/* @import url("userChrome-separate-style-example.css"); */
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/*
+  Original binding was on the List All Tabs button. This broke it from
+  Firefox 61 onward. No issues with the Forward button that I can see.
+*/
+toolbarbutton#forward-button {
+  -moz-binding: url("userChrome.xml#js");
+}
