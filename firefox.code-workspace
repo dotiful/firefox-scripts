@@ -1,0 +1,36 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "/Users/art/Library/Application Support/Firefox/Profiles/g904gg1z.tmp/chrome"
+    },
+    {
+      "path": "/Users/art/code/web/firefox"
+    },
+    {
+      "path": "/Users/art/Library/Application Support/Firefox/Profiles/g2hpmpru.quantum"
+    }
+  ],
+	"settings": {
+    "files.defaultLanguage": "javascript",
+    "search.exclude": {
+      "**/5h4pjeov.default/**": true,
+      "chrome": true
+    },
+    "files.exclude": {
+      // "bookmarkbackups": true,
+      // "cache2": true,
+      // "crashes": true,
+      // "datareporting": true,
+      // "gmp*": true,
+      // "minidumps": true,
+      // "saved-telemetry-pings": true,
+      // "Telemetry*": true,
+      // "security*": true,
+      // "sessionstore*": true,
+      // "thumbnails": true,
+    }
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"user_pref" : {
+		"prefix" : "up",
+		"body" : [
+			"// $3",
+			"user_pref(\"$1\", ${2|\"\",true,false|});$0"
+		]
+	},
+	"user_pref_int" : {
+		"prefix" : "upi",
+		"body" : [
+			"// $3",
+			"user_pref(\"$1\", $2);$0"
+		]
+	}
+}

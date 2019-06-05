@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:xbl="http://www.mozilla.org/xbl">
+    <binding id="toolbars">
+        <implementation>
+            <field name="bottombar">null;</field>
+            <field name="Prefs">null;</field>
+            <constructor><![CDATA[
+                if (this.hasAttribute("addToolbars")) return;
+                this.setAttribute("addToolbars", true);
+                if (!window.CustomizableUI) {
+                    try {
+                        Components.utils.import("resource:///modules/CustomizableUI.jsm");
+                    } catch(e) {
+                        return;
+                    }   
+                }
+                var b_collapsed = false;
+                try {
+                    let branch = Services.prefs.getDefaultBranch("extensions.add_additional_bars.");
+                    let Prefs = Services.prefs.getBranch("extensions.add_additional_bars.");
+                    try {
+                        if (!branch.getBoolPref("bottom_collapsed") && Prefs.getBoolPref("bottom_collapsed"))
+                            b_collapsed = true;
+                    } catch (ex) {
+                        branch.setBoolPref("bottom_collapsed", false);
+                        if (Prefs.getBoolPref("bottom_collapsed"))
+                            b_collapsed = true;
+                    }
+                    this.Prefs = Prefs;
+                } catch(e) {}
+                var knsxul = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+                var bottombar = document.createElementNS(knsxul, "toolbar");
+                var bottombarid = "add-additional-bottom-bar";
+                bottombar.id = bottombarid;
+                bottombar.className = "toolbar-primary chromeclass-toolbar customization-target";
+                bottombar.setAttribute("toolbarname", "Нижняя панель");
+                bottombar.setAttribute("toolboxid", "navigator-toolbox");
+                bottombar.setAttribute("context", "toolbar-context-menu");
+                bottombar.setAttribute("mode", "icons");
+                bottombar.setAttribute("iconsize", "small");
+                bottombar.setAttribute("customizable", true);
+                bottombar.setAttribute("collapsed", b_collapsed);
+                var closebutton = document.createElementNS(knsxul, "toolbarbutton");
+                closebutton.id = "add-additional-bottom-closebutton";
+                closebutton.className = "close-icon closebutton";
+                closebutton.setAttribute("tooltiptext", "Скрыть панель");
+                closebutton.setAttribute("removable", false);
+                closebutton.setAttribute("oncommand", "var bar = this.parentNode; setToolbarVisibility(bar, bar.collapsed);");
+                bottombar.appendChild(closebutton);
+                try {
+                    if (this._getAreaType(bottombarid)) {
+                        CustomizableUI.registerArea(bottombarid, {
+                            type: CustomizableUI.TYPE_TOOLBAR,
+                            defaultPlacements: ["add-additional-bottom-closebutton", "add-additional-bottom-spring", "add-restart-app"],
+                            defaultCollapsed: false
+                        });
+                    }
+                    this.appendChild(bottombar);
+                } catch(e) {}
+                this.bottombar = bottombar;
+                window.addEventListener("toolbarvisibilitychange", this, false);
+                try {
+                    let id = "add-additional-bottom-spring";
+                    if (this._getWidget(id)) {
+                        CustomizableUI.createWidget({
+                            id: id,
+                            type: "custom",
+                            label: "Растягивающийся интервал",
+                            onBuild: function(document) {
+                                var toolbaritem = document.createElement("toolbaritem");
+                                toolbaritem.id = id;
+                                toolbaritem.className = "add-additional-springs";
+                                toolbaritem.setAttribute("label", "Растягивающийся интервал");
+                                toolbaritem.setAttribute("type", "custom");
+                                toolbaritem.setAttribute("flex", "1");
+                                return toolbaritem;
+                            }
+                        });
+                    }
+                } catch(e) {}
+                try {
+                    let id = "add-restart-app";
+                    if (this._getWidget(id)) {
+                        CustomizableUI.createWidget({
+                            id: id,
+                            label: "Перезагрузка",
+                            tooltiptext: "Перезапустить приложение",
+                            onCommand: function(event) {
+                                var Cc = Components.classes, Ci = Components.interfaces;
+                                var canceled = Cc["@mozilla.org/supports-PRBool;1"].createInstance(Ci.nsISupportsPRBool);
+                                var observerSvc = Cc["@mozilla.org/observer-service;1"].getService(Ci.nsIObserverService);
+                                observerSvc.notifyObservers(canceled, "quit-application-requested", "restart");
+                                if (canceled.data)
+                                    return false;
+                                const appStartup = Cc["@mozilla.org/toolkit/app-startup;1"].getService(Ci.nsIAppStartup);
+                                appStartup.quit(Ci.nsIAppStartup.eAttemptQuit | Ci.nsIAppStartup.eRestart);
+                            }
+                        });
+                    }
+                } catch(e) {}
+                try {
+                    let id = "add-additional-bottom-toggle-button";
+                    if (this._getWidget(id)) {
+                        CustomizableUI.createWidget({
+                            id: id,
+                            label: "Переключить Ниж. панель",
+                            tooltiptext: "Скрыть / Показать Нижнюю панель",
+                            onCommand: function(event) {
+                                var doc = event.target.ownerDocument;
+                                var win = doc.defaultView;
+                                var bar = doc.querySelector("#add-additional-bottom-bar");
+		                        win.setToolbarVisibility(bar, bar.collapsed);
+                            }
+                        });
+                    }
+                } catch(e) {}
+                setTimeout(() => {
+                    if ("getTogglableToolbars" in window) return;
+                    var toolbarsid = "['add-additional-bottom-bar']"; // для ID панелей "['ID1', 'ID2']" и т. д.
+                    var ViewToolbarsPopup = window.onViewToolbarsPopupShowing;
+                    if (typeof ViewToolbarsPopup != "function") return;
+                    var StringFn = ViewToolbarsPopup.toString();
+                    var RegRep = /toolbarNodes\s*=\s*gNavToolbox\s*\.\s*childNodes/g;
+                    if (!RegRep.test(StringFn)) return;
+                    StringFn = StringFn.replace(RegRep, "toolbarNodes = Array.slice(gNavToolbox.childNodes); toolbarNodes = toolbarNodes.concat(" + toolbarsid + ".map(id => document.querySelector('*:not(#navigator-toolbox) > #' + id)).filter(id => id !== null))");
+                    (new Function("window.onViewToolbarsPopupShowing = " + StringFn)());
+                }, 200);
+            ]]></constructor>
+            <destructor><![CDATA[
+                window.removeEventListener("toolbarvisibilitychange", this, false);
+                try {
+                    this.Prefs.setBoolPref("bottom_collapsed", this.bottombar.collapsed);
+                } catch(e) {}
+            ]]></destructor>
+            <method name="handleEvent">
+                <parameter name="event"/>
+                <body><![CDATA[
+                    if (event.target == this.bottombar) {
+                        try {
+                            this.Prefs.setBoolPref("bottom_collapsed", this.bottombar.collapsed);
+                        } catch(e) {}    
+                    }
+                ]]></body>
+            </method>
+            <method name="_getAreaType">
+                <parameter name="id"/>
+                <body><![CDATA[
+                    if (!CustomizableUI.getAreaType(id))
+                        return true;
+                    return false;
+                ]]></body>
+            </method>
+            <method name="_getWidget">
+                <parameter name="id"/>
+                <body><![CDATA[
+                    var widget = CustomizableUI.getWidget(id);
+                    if (!widget || widget.provider != CustomizableUI.PROVIDER_API)
+                        return true;
+                    return false;
+                ]]></body>
+            </method>
+        </implementation>
+    </binding>
+</bindings>
