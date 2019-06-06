@@ -1,50 +1,58 @@
 # Firefox Scripts
 
-## user.js
+## userChrome.css
 
-A [user.js](http://kb.mozillazine.org/User.js_file) configuration file for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) designed to harden browser settings and make it more secure.
+- [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - custom CSS tweaks for Firefox Quantum
+
+- ['Classic' CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2#show_issue) - A lot of excellent information regarding userChrome.css
+
+- [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - a community maintained repository of userChrome.css tweaks for Firefox
 
 ## userChrome.js
-- [aboutbutton](https://github.com/Endor8/userChrome.js/tree/master/aboutbutton)
-- [move reload into urlbar](https://github.com/Endor8/userChrome.js/blob/master/Updates%202019/move_reload_into_url.uc.js)
-- [About Config Button](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigbutton)
-- [About Config Multiple Selection](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigmultipleselection)
-
-## References
-
-### Customizing Firefox
-<!-- #region -->
-- <details>
-  <summary>Themes</summary>
-
-  - [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - A universal dark theme for Firefox
-
-  - [Quantum-Nox-Firefox-Dark-Full-Theme](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) - These usercontent and userchrome files will give a full themed dark color to Firefox Quantum, menus and dialogs included, as well as the scrollbars
-
-</details>
-<!-- #endregion -->
-
-- [File I/O | MDN](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/File_I_O#Getting_special_files) - a full listing of directory tokens
-
-- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - user.js -- Firefox configuration hardening
-
-- [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
-
-- [Aris-t2/CustomJSforFx](https://github.com/Aris-t2/CustomJSforFx) - custom scripts
-
-- [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - Custom CSS tweaks for Firefox Quantum
-
-- [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - A community maintained repository of userChrome.css tweaks for Firefox
 
 - [ardiman/userChrome.js](https://github.com/ardiman/userChrome.js) - Skripte für die Firefox-Erweiterung userChromeJS
 
-### Other documentation
+- [Aris-t2/CustomJSforFx](https://github.com/Aris-t2/CustomJSforFx) - custom scripts
 
-- [About:config entries](http://kb.mozillazine.org/About:config_entries)
+- [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
 
-- [Overview of about:config security and privacy preferences](https://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/)
+- <details>
+    <summary>used scripts</summary>
 
-- [userChrome.css for Customizing Firefox](https://www.userchrome.org)
+    - [aboutbutton](https://github.com/Endor8/userChrome.js/tree/master/aboutbutton)
+
+    - [move reload into urlbar](https://github.com/Endor8/userChrome.js/blob/master/Updates%202019/move_reload_into_url.uc.js)
+
+    - [About Config Button](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigbutton)
+
+    - [About Config Multiple Selection](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigmultipleselection)
+  </details>
+
+
+
+## user.js
+
+- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - Firefox configuration hardening
+
+- [user.js](http://kb.mozillazine.org/User.js_file) - configuration file for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) designed to harden browser settings and make it more secure
+
+## Themes
+
+- [Quantum-Nox-Firefox-Dark-Full-Theme](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) - these usercontent and userchrome files will give a full themed dark color to Firefox Quantum, menus and dialogs included, as well as the scrollbars
+
+- [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - a universal dark theme for Firefox
+
+## Other documentation
+
+- [userchrome.org](https://www.userchrome.org) - userChrome.css for Customizing Firefox
+
+- [MozillaZine Knowledge Base](http://kb.mozillazine.org/index.php?title=UserChrome.css) - userChrome.css
+
+- [File I/O | MDN](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/File_I_O#Getting_special_files) - a full listing of directory tokens
+
+- [about:config entries](http://kb.mozillazine.org/About:config_entries) - reference to the entries in about:config
+
+- [overview of about:config](https://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/) - security and privacy preferences
 
 ## Extensions
 
