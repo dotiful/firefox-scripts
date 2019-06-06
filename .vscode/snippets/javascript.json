@@ -1,0 +1,11 @@
+{
+	"user_pref" : {
+		"prefix" : "up",
+		"body" : [
+			"$LINE_COMMENT $3",
+			"user_pref(\"${TM_SELECTED_TEXT:${1:text}}\", ${2|\u200B,true,false|});",
+      "$0"
+		],
+    "description": "Add a about:config entry"
+	}
+}
