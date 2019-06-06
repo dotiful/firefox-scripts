@@ -32,15 +32,19 @@
 
 ## user.js
 
-- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - Firefox configuration hardening
+- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - firefox configuration hardening
 
-- [user.js](http://kb.mozillazine.org/User.js_file) - configuration file for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) designed to harden browser settings and make it more secure
+- [user.js](http://kb.mozillazine.org/User.js_file) - configuration file for Firefox designed to harden browser settings and make it more secure
+
+- [ghacksuserjs/ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js) - an ongoing comprehensive user.js template for configuring and hardening Firefox privacy, security and anti-fingerprinting
 
 ## Themes
 
 - [Quantum-Nox-Firefox-Dark-Full-Theme](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) - these usercontent and userchrome files will give a full themed dark color to Firefox Quantum, menus and dialogs included, as well as the scrollbars
 
 - [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - a universal dark theme for Firefox
+
+- [FOXSCAPEuC by Michael Walden](mw.rat.bz/foxscapeuc/) - a full featured retro theme for Firefox that makes Firefox look like Netscape 4.x, Netscape 6+ "Classic" theme
 
 ## Other documentation
 

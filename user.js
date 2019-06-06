@@ -12,9 +12,6 @@ user_pref("general.warnOnAboutConfig", false);
 // change the interface language "en-US/ru-RU"
 user_pref("intl.locale.requested", "en-US");
 
-// restore previous session
-user_pref("browser.startup.page", 3);
-
 // disable cycles through tabs in recently used order
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 
@@ -36,20 +33,14 @@ user_pref("app.update.service.enabled", false);
 // disable auto update search engines
 user_pref("browser.search.update", false);
 
-// disable recommend extension from Firefox
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
-
-// disable recommend features from Firefox
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
-
 // customize items in toolbar
 user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"customizableui-special-spring1\",\"sync-button\",\"urlbar-container\",\"customizableui-special-spring2\",\"downloads-button\",\"library-button\",\"sidebar-button\",\"onepassword4_agilebits_com-browser-action\",\"_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action\",\"_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action\",\"_a8332c60-5b6d-41ee-bfc8-e9bb331d34ad_-browser-action\",\"simple-translate_sienori-browser-action\",\"adguardadblocker_adguard_com-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\",\"addon_darkreader_org-browser-action\",\"firefoxbeta_tampermonkey_net-browser-action\",\"firefox_tampermonkey_net-browser-action\",\"fxa-toolbar-menu-button\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action\",\"_a8332c60-5b6d-41ee-bfc8-e9bb331d34ad_-browser-action\",\"simple-translate_sienori-browser-action\",\"firefoxbeta_tampermonkey_net-browser-action\",\"onepassword4_agilebits_com-browser-action\",\"_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\",\"webide-button\",\"adguardadblocker_adguard_com-browser-action\",\"addon_darkreader_org-browser-action\",\"firefox_tampermonkey_net-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":16,\"newElementCount\":12}");
 
-// decode copied urls instead of encode
-user_pref("browser.urlbar.decodeURLsOnCopy", true);
-
 // disable beforeunload events (e.g. “Are you sure you want to leave this page?”
 user_pref("dom.disable_beforeunload", true);
+
+// disable screenshots
+user_pref("extensions.screenshots.disabled", true);
 
 // place the scrollbar on the left side of the content
 // user_pref("layout.scrollbar.side", 3);
@@ -72,10 +63,16 @@ user_pref("media.autoplay.default", 1);
 // disable zoom with cmd+scroll
 user_pref("mousewheel.with_meta.action", 1);
 
+// tab audio icon
+user_pref("browser.tabs.showAudioPlayingIcon", true);
+
 
 //
 // ─── HOME ────────────────────────────────────────────────────────────────────
 //
+
+// restore previous session
+user_pref("browser.startup.page", 3);
 
 // 4 rows of top sites
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 4);
@@ -88,6 +85,12 @@ user_pref("browser.startup.homepage", "https://www.google.com.ua/");
 
 // disable web search input on new page
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
+
+// disable recommend extension from Firefox
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
+
+// disable recommend features from Firefox
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 
 // disable highlights
 user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
@@ -108,6 +111,9 @@ user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 
 // disable URL autocomplete
 // user_pref("browser.urlbar.autoFill", false);
+
+// decode copied urls instead of encode
+user_pref("browser.urlbar.decodeURLsOnCopy", true);
 
 // history-first search suggestions in the url bar
 user_pref("browser.urlbar.matchBuckets", "general:4,suggestion:infinity");
@@ -197,11 +203,12 @@ user_pref("browser.sessionstore.interval", 100000);
 // user_pref("network.http.sendRefererHeader", 0);
 
 // disable the "website is now full screen" warning
+user_pref("full-screen-api.warning.delay", 0);
 user_pref("full-screen-api.warning.timeout", 0);
 
 // disable fullscreen animation
-user_pref("full-screen-api.transition-duration.enter", 0);
-user_pref("full-screen-api.transition-duration.leave", 0);
+user_pref("full-screen-api.transition-duration.enter", "0 0");
+user_pref("full-screen-api.transition-duration.leave", "0 0");
 
 // disable cosmetic animations (tab open/close; fullscreen enter)
 user_pref("toolkit.cosmeticAnimations.enabled", false);
