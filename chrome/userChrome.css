@@ -4,14 +4,12 @@
  * and apply XML bindings to elements
  */
 
-/* toolbarbutton#alltabs-button {
-  -moz-binding: url("./userChrome/userChrome.xml#js");
-} */
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* @namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+/* This enables the use of JS external files */
 toolbarbutton#alltabs-button {
   -moz-binding: url("userChrome.xml#js");
-} */
+}
 
 
 /* Firefox Quantum userChrome.css tweaks ********************************************************/
