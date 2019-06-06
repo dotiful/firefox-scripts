@@ -1,30 +1,49 @@
 <?xml version="1.0"?>
-<!--
-  userChrome.xml
-  Allows *.uc.js files placed in the chrome folder to run
-  This enables some functionality that's unavailable to add-ons,
-  like opening a custom local page in each new tab
+<!-- Copyright (c) 2017 Haggai Nuchi
+Available for use under the MIT License:
+https://opensource.org/licenses/MIT
+ -->
 
-  Copyright (c) 2017 Haggai Nuchi
-  Available for use under the MIT License:
-  https://opensource.org/licenses/MIT
--->
-
-<bindings id="generalBindings"
-  xmlns="http://www.mozilla.org/xbl"
-  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-  xmlns:xbl="http://www.mozilla.org/xbl">
-
-  <binding id="js" extends="chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton-badged">
+<!-- Run userChrome.js/userChrome.xul and .uc.js/.uc.xul/.css files  -->
+<bindings xmlns="http://www.mozilla.org/xbl">
+  <binding id="js" extends="chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton">
     <implementation>
       <constructor><![CDATA[
-        function makeRelativePathURI(name) {
-          let absolutePath = Components.stack.filename;
-          return absolutePath.substring(0, absolutePath.lastIndexOf("/") + 1) + name;
+        if(window.userChromeJsMod) return;
+        window.userChromeJsMod = true;
+        
+        var chromeFiles = FileUtils.getDir("UChrm", ['scripts']).directoryEntries;
+        var xulFiles = [];
+        var sss = Cc['@mozilla.org/content/style-sheet-service;1'].getService(Ci.nsIStyleSheetService);
+        
+        while(chromeFiles.hasMoreElements()) {
+          var file = chromeFiles.getNext().QueryInterface(Ci.nsIFile);
+          var fileURI = Services.io.newFileURI(file);
+          
+          if(file.isFile()) {
+            if(/(^userChrome|\.uc)\.js$/i.test(file.leafName)) {
+              Services.scriptloader.loadSubScriptWithOptions(fileURI.spec, {target: window, ignoreCache: true});
+            }
+            else if(/(^userChrome|\.uc)\.xul$/i.test(file.leafName)) {
+              xulFiles.push(fileURI.spec);
+            }
+            else if(/\.as\.css$/i.test(file.leafName)) {
+              if(!sss.sheetRegistered(fileURI, sss.AGENT_SHEET))
+                sss.loadAndRegisterSheet(fileURI, sss.AGENT_SHEET);
+            }
+            else if(/^(?!(userChrome|userContent)\.css$).+\.css$/i.test(file.leafName)) {
+              if(!sss.sheetRegistered(fileURI, sss.USER_SHEET))
+                sss.loadAndRegisterSheet(fileURI, sss.USER_SHEET);
+            }
+          }
         }
-        // The following code executes in the browser context,
-        // i.e. chrome://browser/content/browser.xul
-        Services.scriptloader.loadSubScript(makeRelativePathURI("userChrome.js"), window);
+          
+        setTimeout(function loadXUL() {
+          if(xulFiles.length > 0) {
+            document.loadOverlay(xulFiles.shift(), null);
+            setTimeout(loadXUL, 5);
+          }
+        }, 0);
       ]]></constructor>
     </implementation>
   </binding>
