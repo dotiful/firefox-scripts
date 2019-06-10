@@ -1,32 +1,22 @@
 /**
  * userChrome.css
  * change the appearance of the user interface
- * and apply XML bindings to elements
+ */
+
+/* apply MaterialFox theme */
+@import "./css/materialfox/chrome/userChrome.css";
+
+/* tab close icon settings */
+@import "./css/tabs/tab_close_always_visible.css";
+
+
+/**
+ * Apply XML bindings to elements
+ * this enables the use of external js files
  */
 
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-/* This enables the use of JS external files */
 toolbarbutton#alltabs-button {
   -moz-binding: url("userChrome.xml#js");
 }
-
-
-/* Firefox Quantum userChrome.css tweaks ********************************************************/
-/* code mostly taken from 'Classic Theme Restorer' & 'Classic Toolbar Buttons' add-ons **********/
-/* Github: https://github.com/aris-t2/customcssforfx ********************************************/
-/************************************************************************************************/
-
-/************************************************************************************************/
-/* Custom CSS for Firefox 60+ *******************************************************************/
-/* version 2.5.3 ********************************************************************************/
-/************************************************************************************************/
-
-/* tab close icon settings - [only use one at a time] */
-@import "./css/tabs/tab_close_always_visible.css";
-
-/* only show bookmarks icon on toolbar */
-/* @import "./css/toolbars/faviconized-bookmarks.css"; */
-
-/* bookmarks toolbar is visible only on new tab page */
-/* @import "./css/toolbars/show-bookmarks-only-on-newtab.css"; */
