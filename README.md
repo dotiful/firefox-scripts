@@ -40,6 +40,8 @@
 
 ## Themes
 
+- [muckSponge/MaterialFox](https://github.com/muckSponge/MaterialFox) - A Material Design-inspired userChrome.css theme for Firefox
+
 - [Quantum-Nox-Firefox-Dark-Full-Theme](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) - these usercontent and userchrome files will give a full themed dark color to Firefox Quantum, menus and dialogs included, as well as the scrollbars
 
 - [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - a universal dark theme for Firefox

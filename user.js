@@ -53,8 +53,40 @@ user_pref("browser.bookmarks.autoExportHTML", true);
 // define the number of bookmarks backups
 user_pref("browser.bookmarks.max_backups", 15);
 
+//
+// ─── BEHAVIOUR ───────────────────────────────────────────────────────────────
+//
+
+// ─── OPEN URLS ───────────────────────────────────────────────────────────────
+
+// force links to open in the same tab
+// 3 = divert new window to a new tab (default)
+// 2 = allow link to open a new window
+// 1 = force new window into same tab 
+user_pref("browser.link.open_newwindow", 1);
+
+// divert links opened via JS OR HTML target="_blank"
+// 0 = apply the setting under (A) to ALL new windows (even script windows)
+// 2 = apply the setting under (A) to normal windows, but NOT to script windows with features (default)
+// 1 = override the setting under (A) and always use new windows 
+user_pref("browser.link.open_newwindow.restriction", 0);
+
+// for links in other programs
+// -1 = apply the setting under (A) to external links (default)
+// 3 = open external links in a new tab in the last active window
+// 2 = open external links in a new window
+// 1 = open external links in the last active tab replacing the current page 
+user_pref("browser.link.open_newwindow.override.external", ​3);
+
+// open tabs to the right of the current tab
+user_pref("browser.tabs.insertAfterCurrent", true);
+
+
 // open bookmarks in background enstead of switch to it
 // user_pref("browser.tabs.loadBookmarksInBackground", true);
+
+// user_pref("browser.tabs.loadInBackground", true);
+// user_pref("browser.tabs.loadDivertedInBackground", true);
 
 
 //
@@ -69,16 +101,28 @@ user_pref("ui.systemUsesDarkTheme", 1);
 user_pref("sidebar.position_start", false);
 
 // disable autoplay
+user_pref("media.autoplay.enabled", false);
 user_pref("media.autoplay.default", 1);
 
 // disable zoom with cmd+scroll
 user_pref("mousewheel.with_meta.action", 1);
 
+/* TABS ───────────────────────────────────────────────────────────────────── */
+
 // tab audio icon
 user_pref("browser.tabs.showAudioPlayingIcon", true);
 
-// place the scrollbar on the left side of the content
-// user_pref("layout.scrollbar.side", 3);
+// materialfox
+user_pref("materialFox.reduceTabOverflow", true);
+user_pref("svg.context-properties.content.enabled", true);
+
+// always show tab close button
+user_pref("browser.tabs.closeButtons", ​1);
+
+// replicate chrome behaviour for clipped tabs
+user_pref("browser.tabs.tabClipWidth", ​80);
+
+
 
 //
 // ─── HOME ────────────────────────────────────────────────────────────────────
@@ -124,6 +168,10 @@ user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 
 // disable URL autocomplete
 // user_pref("browser.urlbar.autoFill", false);
+
+// number of entries that can appear in the location bar
+user_pref("browser.urlbar.maxRichResults", 15​);
+
 
 // decode copied urls instead of encode
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
@@ -200,6 +248,13 @@ user_pref("security.dialog_enable_delay", 0);
 // ─── PERFORMANCE ─────────────────────────────────────────────────────────────
 //
 
+// limit content processes load 
+user_pref("dom.ipc.processCount", 4);
+
+// don’t load tabs until selected
+user_pref("browser.sessionstore.restore_on_demand", true);
+user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
+
 // maximum number of recently visited pages to store in memory
 user_pref("browser.sessionhistory.max_total_viewers", 2);
 
@@ -209,8 +264,17 @@ user_pref("browser.cache.memory.max_entry_size", 4096);
 // number of milliseconds between session saving operations
 user_pref("browser.sessionstore.interval", 100000);
 
+// enable dns prefetching
+user_pref("network.dns.disablePrefetch", true);
+
 // when to send the Referer header and set document.referrer
 // user_pref("network.http.sendRefererHeader", 0);
+
+/* DISABLE SNIMATIONS ─────────────────────────────────────────────────────── */
+
+// 
+user_pref("config.trim_on_minimize", false​);
+
 
 // disable the "website is now full screen" warning
 user_pref("full-screen-api.warning.delay", 0);
@@ -254,12 +318,6 @@ user_pref("xpinstall.signatures.required", false);
 // user_pref("devtools.debugger.prompt-connection", false);
 
 // ─────────────────────────────────────────────────────────────────────────────
-
-// user_pref("browser.link.open_newwindow", 3);
-// user_pref("browser.link.open_newwindow.restriction", 0);
-
-// user_pref("browser.tabs.loadDivertedInBackground", true);
-// user_pref("browser.tabs.loadInBackground", true);
 
 // user_pref("browser.fixup.alternate.enabled", false);
 // user_pref("browser.urlbar.suggest.bookmark", false);

@@ -1,0 +1,3 @@
+[submodule "chrome/css/materialfox"]
+	path = chrome/css/materialfox
+	url = https://github.com/muckSponge/MaterialFox
