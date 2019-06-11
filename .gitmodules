@@ -1,3 +1,6 @@
 [submodule "chrome/css/materialfox"]
 	path = chrome/css/materialfox
 	url = https://github.com/muckSponge/MaterialFox
+[submodule "chrome/css/customcssforfx"]
+	path = chrome/css/customcssforfx
+	url = https://github.com/Aris-t2/CustomCSSforFx
