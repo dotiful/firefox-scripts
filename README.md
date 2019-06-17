@@ -103,9 +103,9 @@
     | Display position - Reference point   | Clicked Point                                                                            |
     | Display position - Direction         | Bottom                                                                                   |
     | Display position - Offset            | 20                                                                                       |
-    | Font color of translation result     | `#ffffff` ![color](https://placehold.it/16/ffffff/000000?text=+)<br>`rgb(255, 255, 255)` |
-    | Font color of translation candidates | `#e3ded5` ![color](https://placehold.it/16/e3ded5/000000?text=+)<br>`rgb(227, 222, 213)` |
-    | Background-color                     | `#007997` ![color](https://placehold.it/16/007997/007896?text=+)<br>`rgb(0, 121, 151)`   |
+    | Font color of translation result     | ![color](https://via.placeholder.com/10/ffffff?text=+) `#ffffff`<br>`rgb(255, 255, 255)` |
+    | Font color of translation candidates | ![color](https://via.placeholder.com/10/e3ded5?text=+) `#e3ded5`<br>`rgb(227, 222, 213)` |
+    | Background-color                     | ![color](https://via.placeholder.com/10/007997?text=+) `#007997`<br>`rgb(0, 121, 151)`   |
 
     ### Preview
 
@@ -114,7 +114,7 @@
     ----
   </details>
 
-- [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) Use native tab discard method to automatically reduce memory usage of inactive tabs
+- [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) - Use native tab discard method to automatically reduce memory usage of inactive tabs
   <details>
     <summary>settings</summary>
 
