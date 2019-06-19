@@ -1,0 +1,43 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chalk": "^2.4.2",
+    "del": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-gulp": "^3.0.1",
+    "eslint-plugin-import": "^2.17.3",
+    "firefox-profile": "^1.2.0",
+    "firefox-profile-path": "^1.0.2",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-prettyerror": "^1.2.1",
+    "gulp-size": "^3.0.0",
+    "stylelint": "10.0.0",
+    "stylelint-config-stylishthemes": "^1.0.0",
+    "through2": "^3.0.1"
+  },
+  "name": "firefox",
+  "description": "Custom tweaks and preferences for Firefox",
+  "version": "1.0.0",
+  "main": "user.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotiful/firefox-scripts.git"
+  },
+  "keywords": [],
+  "author": "Art Dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dotiful/firefox-scripts/issues"
+  },
+  "homepage": "https://github.com/dotiful/firefox-scripts#readme"
+}
