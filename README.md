@@ -8,9 +8,11 @@
 
 - [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - a community maintained repository of userChrome.css tweaks for Firefox
 
+- [stonecrusher/simpleMenuWizard](https://github.com/stonecrusher/simpleMenuWizard) - Hide contextmenu items in Firefox
+
 ## userChrome.js
 
-- [ardiman/userChrome.js](https://github.com/ardiman/userChrome.js) - Skripte für die Firefox-Erweiterung userChromeJS
+- [Endor8/userChrome.js](https://github.com/Endor8/userChrome.js) - Scripts for the Firefox extension userChrome.js
 
 - [Aris-t2/CustomJSforFx](https://github.com/Aris-t2/CustomJSforFx) - custom scripts
 
