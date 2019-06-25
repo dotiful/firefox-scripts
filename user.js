@@ -76,7 +76,7 @@ user_pref("browser.link.open_newwindow.restriction", 0);
 // 3 = open external links in a new tab in the last active window
 // 2 = open external links in a new window
 // 1 = open external links in the last active tab replacing the current page
-user_pref("browser.link.open_newwindow.override.external", ​3);
+user_pref("browser.link.open_newwindow.override.external", 3);
 
 // open tabs to the right of the current tab
 user_pref("browser.tabs.insertAfterCurrent", true);
@@ -104,6 +104,9 @@ user_pref("sidebar.position_start", false);
 user_pref("media.autoplay.enabled", false);
 user_pref("media.autoplay.default", 1);
 
+user_pref("media.videocontrols.picture-in-picture.enabled", false);
+user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);
+
 // disable zoom with cmd+scroll
 user_pref("mousewheel.with_meta.action", 1);
 
@@ -117,10 +120,10 @@ user_pref("materialFox.reduceTabOverflow", true);
 user_pref("svg.context-properties.content.enabled", true);
 
 // always show tab close button
-user_pref("browser.tabs.closeButtons", ​1);
+user_pref("browser.tabs.closeButtons", 1);
 
 // replicate chrome behaviour for clipped tabs
-user_pref("browser.tabs.tabClipWidth", ​80);
+user_pref("browser.tabs.tabClipWidth", 80);
 
 
 
@@ -170,8 +173,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 // user_pref("browser.urlbar.autoFill", false);
 
 // number of entries that can appear in the location bar
-user_pref("browser.urlbar.maxRichResults", 15​);
-
+user_pref("browser.urlbar.maxRichResults", 15);
 
 // decode copied urls instead of encode
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
@@ -199,7 +201,7 @@ user_pref("findbar.modalHighlight", true);
 
 // allow extensions on Mozilla websites
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
-user_pref("extensions.webextensions.restrictedDomains", "accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,api.accounts.firefox.com,content.cdn.mozilla.net,discovery.addons.mozilla.org,input.mozilla.org,install.mozilla.org,oauth.accounts.firefox.com,profile.accounts.firefox.com,sync.services.mozilla.com,testpilot.firefox.com");
+user_pref("extensions.webextensions.restrictedDomains", "accounts-static.cdn.mozilla.net,accounts.firefox.com,addons.cdn.mozilla.net,api.accounts.firefox.com,content.cdn.mozilla.net,oauth.accounts.firefox.com,sync.services.mozilla.com,testpilot.firefox.com");
 
 // customize content blocking
 user_pref("browser.contentblocking.category", "custom");
@@ -233,6 +235,15 @@ user_pref("privacy.donottrackheader.enabled", true);
 // ─── EXTENSIONS ──────────────────────────────────────────────────────────────
 //
 
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+user_pref("extensions.htmlaboutaddons.discover.enabled", false);
+
+user_pref("extensions.htmlaboutaddons.enabled", false);
+user_pref("extensions.htmlaboutaddons.inline-options.enabled", false);
+
+// disable add-on abuse reporting
+user_pref("extensions.abuseReport.enabled", false);
+
 // disable extension compatibility checks
 user_pref("extensions.checkCompatibility", false);
 
@@ -243,6 +254,7 @@ user_pref("extensions.pendingOperations", false);
 // disable extension install delay
 user_pref("security.dialog_enable_delay", 0);
 
+user_pref("permissions.desktop-notification.postPrompt.enabled", false);
 
 //
 // ─── PERFORMANCE ─────────────────────────────────────────────────────────────
@@ -270,10 +282,10 @@ user_pref("network.dns.disablePrefetch", true);
 // when to send the Referer header and set document.referrer
 // user_pref("network.http.sendRefererHeader", 0);
 
-/* DISABLE SNIMATIONS ─────────────────────────────────────────────────────── */
+/* DISABLE ANIMATIONS ─────────────────────────────────────────────────────── */
 
 //
-user_pref("config.trim_on_minimize", false​);
+user_pref("config.trim_on_minimize", false);
 
 
 // disable the "website is now full screen" warning
