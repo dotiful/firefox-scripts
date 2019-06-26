@@ -1,5 +1,9 @@
 # Firefox Scripts
 
+[![Dependency Status](https://david-dm.org/dotiful/firefox-scripts.svg)](https://david-dm.org/dotiful/firefox-scripts)
+[![devDependency Status](https://david-dm.org/dotiful/firefox-scripts/dev-status.svg)](https://david-dm.org/dotiful/firefox-scripts#info=devDependencies)
+
+
 ## userChrome.css
 
 - [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - custom CSS tweaks for Firefox Quantum
@@ -30,9 +34,9 @@
     - [About Config Multiple Selection](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigmultipleselection)
   </details>
 
-
-
 ## user.js
+
+- [gocom/pinceau](https://github.com/gocom/pinceau) - Personal Firefox userChrome and preference customizations
 
 - [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - firefox configuration hardening
 
