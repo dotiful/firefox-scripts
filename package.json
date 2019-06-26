@@ -1,16 +1,37 @@
 {
+  "name": "firefox",
+  "description": "Custom tweaks and preferences for Firefox",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotiful/firefox-scripts.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Art Dev",
+    "email": "artdevjs@gmail.com",
+    "url": "https://github.com/dotiful"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotiful/firefox-scripts/issues"
+  },
+  "homepage": "https://github.com/dotiful/firefox-scripts#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
     "chalk": "^2.4.2",
+    "cz-conventional-changelog": "^2.1.0",
     "del": "^4.1.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-gulp": "^3.0.1",
+    "eslint-find-rules": "^3.3.1",
     "eslint-plugin-import": "^2.17.3",
     "firefox-profile": "^1.2.0",
-    "firefox-profile-path": "^1.0.2",
     "gulp": "^4.0.2",
     "gulp-changed": "^4.0.0",
     "gulp-debug": "^4.0.0",
@@ -18,26 +39,21 @@
     "gulp-plumber": "^1.2.1",
     "gulp-prettyerror": "^1.2.1",
     "gulp-size": "^3.0.0",
+    "husky": "^2.5.0",
+    "lint-staged": "^8.2.1",
+    "markdownlint-cli": "^0.17.0",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
     "stylelint": "10.0.0",
     "stylelint-config-stylishthemes": "^1.0.0",
     "through2": "^3.0.1"
   },
-  "name": "firefox",
-  "description": "Custom tweaks and preferences for Firefox",
-  "version": "1.0.0",
-  "main": "user.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dotiful/firefox-scripts.git"
-  },
-  "keywords": [],
-  "author": "Art Dev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dotiful/firefox-scripts/issues"
-  },
-  "homepage": "https://github.com/dotiful/firefox-scripts#readme"
+    "format": "prettier --write '**/*.js'",
+    "lint": "npm-run-all --silent lint:*",
+    "lint:markdown": "markdownlint --config .markdownlint.json README.md",
+    "commit": "commitlint -E HUSKY_GIT_PARAMS",
+    "cm": "npx git-cz",
+    "release": "npx standard-version"
+  }
 }

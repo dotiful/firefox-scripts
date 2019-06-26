@@ -1,8 +1,8 @@
 {
-  "eslint.enable": false,
+  "eslint.enable": true,
   "files.defaultLanguage": "javascript",
   "files.exclude": {
-    ".markdownlint.json": true
+
   },
   "editor.autoClosingQuotes": "always"
 }

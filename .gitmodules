@@ -1,9 +1,9 @@
-[submodule "chrome/css/materialfox"]
-	path = chrome/css/materialfox
+[submodule "src/chrome/css/materialfox"]
+	path = src/chrome/css/materialfox
 	url = https://github.com/muckSponge/MaterialFox
-[submodule "chrome/css/customcssforfx"]
-	path = chrome/css/customcssforfx
+[submodule "src/chrome/css/customcssforfx"]
+	path = src/chrome/css/customcssforfx
 	url = https://github.com/Aris-t2/CustomCSSforFx
-[submodule "chrome/userChrome"]
-	path = chrome/userChrome
+[submodule "src/chrome/userChrome"]
+	path = src/chrome/userChrome
 	url = https://github.com/Endor8/userChrome.js
