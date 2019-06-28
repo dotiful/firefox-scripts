@@ -4,7 +4,7 @@ import del         from 'del';
 import through2    from 'through2';
 import changed     from 'gulp-changed';
 import prettyError from 'gulp-prettyerror';
-import { log }     from "./logger.js";
+import { log }     from "./lib/logger.js";
 // import babel    from 'gulp-babel';
 
 const { src, dest, task, parallel, series, watch } = gulp;

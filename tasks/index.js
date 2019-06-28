@@ -1,0 +1,8 @@
+export { clean } from './clean'
+export { scripts } from './scripts'
+export { styles } from './styles'
+export { markup } from './markup'
+export { images } from './images'
+export { manifest } from './manifest'
+export { watch } from './watch'
+export { bundle } from './bundle'

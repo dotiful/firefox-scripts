@@ -126,7 +126,6 @@ user_pref("browser.tabs.closeButtons", 1);
 user_pref("browser.tabs.tabClipWidth", 80);
 
 
-
 //
 // ─── HOME ────────────────────────────────────────────────────────────────────
 //
@@ -230,6 +229,20 @@ user_pref("media.peerconnection.enabled", false);
 // block browser tracking
 user_pref("privacy.donottrackheader.enabled", true);
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Disables geolocation and firefox logging geolocation requests.
+user_pref("geo.enabled", false);
+user_pref("geo.wifi.uri", "");
+user_pref("browser.search.geoip.url", "");
+
+// Prevent website tracking clicks.
+user_pref("browser.send_pings", false);
+
+// Only send pings if send and receiving host match (same website).
+user_pref("browser.send_pings.require_same_host", true);
+
+
+
 
 //
 // ─── EXTENSIONS ──────────────────────────────────────────────────────────────
@@ -324,6 +337,10 @@ user_pref("devtools.defaultColorUnit", "hex");
 
 // disable addons signing
 user_pref("xpinstall.signatures.required", false);
+
+user_pref("app.normandy.first_run", false);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
+user_pref("trailhead.firstrun.didSeeAboutWelcome", true);
 
 // user_pref("devtools.chrome.enabled", true);
 // user_pref("devtools.debugger.remote-enabled", true);

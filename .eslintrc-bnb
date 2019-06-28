@@ -1,23 +1,19 @@
 {
-  "extends": [
-    "eslint-config-standard",
-    "prettier",
-    "prettier/standard"
-  ],
+  "extends": "airbnb-base",
   "env": {
-    "es6":  true,
     "node": true
   },
   "globals": {
     "user_pref": "readonly"
   },
-  "plugins": [
-    "json",
-    "prettier"
-  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
   "rules": {
-    "max-len": "warn",
-    "prettier/prettier": "error"
+    "semi": "error",
+    "quotes": ["error", "single"],
+    "max-len": "warn"
   },
   "overrides": [
     {
