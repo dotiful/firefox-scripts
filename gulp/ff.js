@@ -1,5 +1,5 @@
 const FirefoxProfile = require('firefox-profile');
-const createProfile = require('./create-firefox-profile');
+const createProfile = require('./lib/create-firefox-profile');
 const fs = require('fs');
 const path = require('path');
 

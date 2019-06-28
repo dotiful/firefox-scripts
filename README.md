@@ -15,6 +15,7 @@
 - [stonecrusher/simpleMenuWizard](https://github.com/stonecrusher/simpleMenuWizard) - Hide contextmenu items in Firefox
 
 ## userChrome.js
+- [dupontjoy/userChrome.js-Collections](https://github.com/dupontjoy/userChrome.js-Collections-) - UC scripts collections
 
 - [Endor8/userChrome.js](https://github.com/Endor8/userChrome.js) - Scripts for the Firefox extension userChrome.js
 
@@ -55,6 +56,15 @@
 - [FOXSCAPEuC by Michael Walden](mw.rat.bz/foxscapeuc/) - a full featured retro theme for Firefox that makes Firefox look like Netscape 4.x, Netscape 6+ "Classic" theme
 
 ## Other documentation
+- [Add-ons — server](https://addons-server.readthedocs.io/en/latest/topics/api/addons.html) - Add-ons API documentation
+
+- [Source Tree Docs](https://firefox-source-docs.mozilla.org/index.html#) - Mozilla Source Tree Docs 69.0a1 documentation
+
+- [Are We XBL Still?](https://bgrins.github.io/xbl-analysis/) - site contains tools for understanding and working with XBL code in Firefox to make it easier to replace
+
+- [Searchfox](https://searchfox.org) -  Searchfox is a source code indexing tool for Mozilla Firefox.
+
+- [firefox-source-docs](https://firefox-source-docs.mozilla.org) - Mozilla Source Tree Docs 69.0a1 documentation
 
 - [userchrome.org](https://www.userchrome.org) - userChrome.css for Customizing Firefox
 

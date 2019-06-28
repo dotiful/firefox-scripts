@@ -180,7 +180,7 @@ panel:not(#urlbar-results):not(#PopupAutoCompleteRichResult)
 
 	margin-left: -14px !important;
 	margin-top: -19px !important;
-	
+
 	padding: 11px 14px 18px !important;
 }
 
@@ -354,7 +354,7 @@ panelmultiview .toolbaritem-combined-buttons > spacer.after-label
 #tracking-protection-preferences-button > .toolbarbutton-text
 {
     padding-inline-end: 4px !important;
-	-moz-box-ordinal-group: 0 !important; 
+	-moz-box-ordinal-group: 0 !important;
 }
 
 .identity-popup-section
@@ -719,7 +719,7 @@ panelmultiview .toolbaritem-combined-buttons > spacer.after-label
 	height: 32px !important;
 	padding: 0 !important;
 	flex: 0 0 auto !important;
-	position: relative !important;
+  position: relative !important;
 	outline: 0 !important;
 }
 
