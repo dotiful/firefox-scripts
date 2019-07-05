@@ -3,12 +3,11 @@
 [![Dependency Status](https://david-dm.org/dotiful/firefox-scripts.svg)](https://david-dm.org/dotiful/firefox-scripts)
 [![devDependency Status](https://david-dm.org/dotiful/firefox-scripts/dev-status.svg)](https://david-dm.org/dotiful/firefox-scripts#info=devDependencies)
 
-
 ## userChrome.css
 
 - [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - custom CSS tweaks for Firefox Quantum
 
-- ['Classic' CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2#show_issue) - A lot of excellent information regarding userChrome.css
+- [Classic CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2#show_issue) - A lot of excellent information regarding userChrome.css
 
 - [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - a community maintained repository of userChrome.css tweaks for Firefox
 
@@ -152,19 +151,25 @@
 
 ### ui
 
-- [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/?src=collection) - Dark mode for every website
-
 - [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) - Easily install custom themes from popular online repositories, or create, edit, and manage your own personalized CSS stylesheets
 
-### bookmarks
+- [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/?src=collection) - Dark mode for every website
 
-- [Bookmarks Organizer](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-organizer/) - Put order in your bookmarks, find no longer working bookmarks, redirects, duplicates and more
+### dev
 
-- [Bookmark Dupes](https://addons.mozilla.org/en-US/firefox/addon/bookmark-dupes/) - Display/Remove duplicate bookmarks, empty folders or descriptions
+- [CodeCopy](https://addons.mozilla.org/en-US/firefox/addon/codecopy/) - Because copy to clipboard buttons should exist on every code snippet.
 
-- [Checkmarks](https://addons.mozilla.org/en-US/firefox/addon/checkmarks-web-ext/) - Check bookmarks and reload favicons
+- [Module Linker](https://addons.mozilla.org/en-US/firefox/addon/module-linker/) - Add direct links to imported modules on GitHub source code.
 
-- [Raindrop.io](https://addons.mozilla.org/en-US/firefox/addon/raindropio/) - Keep your favorites handy
+- [npm-hub](https://addons.mozilla.org/en-US/firefox/addon/npm-hub) - Explore npm dependencies on GitHub repos.
+
+- [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/) - Simplifies the GitHub interface and adds many useful features.
+
+- [Gitpod](https://addons.mozilla.org/en-US/firefox/addon/gitpod/) - One-Click Online IDE for GitHub.
+
+- [JSON Lite](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files.
+
+- [Console Recorder for AWS](https://addons.mozilla.org/en-US/firefox/addon/console-recorder/) - Records actions made in the AWS Management Console and outputs the equivalent CLI/SDK commands and CloudFormation/Terraform templates.
 
 ### extension development
 
@@ -173,6 +178,16 @@
 - [Extension source viewer](https://addons.mozilla.org/en-US/firefox/addon/crxviewer/) - View source code of Firefox add-ons and Chrome extensions (crx/nex/xpi) from addons.mozilla.org, the Chrome Webstore and elsewhere
 
 - [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/?src=github) - Enables the Google Chrome Store and Opera Addons Website for Firefox. Point and click to install Opera/Chrome extensions straight into firefox
+
+### bookmarks
+
+- [Bookmark Dupes](https://addons.mozilla.org/en-US/firefox/addon/bookmark-dupes/) - Display/Remove duplicate bookmarks, empty folders or descriptions
+
+- [Bookmarks Organizer](https://addons.mozilla.org/en-US/firefox/addon/bookmarks-organizer/) - Put order in your bookmarks, find no longer working bookmarks, redirects, duplicates and more
+
+- [Checkmarks](https://addons.mozilla.org/en-US/firefox/addon/checkmarks-web-ext/) - Check bookmarks and reload favicons
+
+- [Raindrop.io](https://addons.mozilla.org/en-US/firefox/addon/raindropio/) - Keep your favorites handy
 
 ### rss
 
@@ -187,5 +202,7 @@
 - [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage
 
 - [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) - Multi-Account Containers lets you keep parts of your online life separated into color-coded tabs that preserve your privacy
+
+- [Focus On Left Tab After Closing](https://addons.mozilla.org/en-US/firefox/addon/focus-on-left-tab-aft-closing/) - Activate the left tab when a current tab is closed.
 
 - [I'm not robot captcha clicker](https://addons.mozilla.org/en-US/firefox/addon/i-m-not-robot-captcha-clicker/) - I'm not robot captcha automatic clicker
