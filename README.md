@@ -3,15 +3,49 @@
 [![Dependency Status](https://david-dm.org/dotiful/firefox-scripts.svg)](https://david-dm.org/dotiful/firefox-scripts)
 [![devDependency Status](https://david-dm.org/dotiful/firefox-scripts/dev-status.svg)](https://david-dm.org/dotiful/firefox-scripts#info=devDependencies)
 
+* [Firefox Scripts](#Firefox-Scripts)
+  * [about:config](#aboutconfig)
+  * [userChrome.css](#userChromecss)
+  * [userChrome.js](#userChromejs)
+  * [user.js](#userjs)
+  * [themes](#themes)
+  * [tutorials and documentations](#tutorials-and-documentations)
+  * [extensions](#extensions)
+    * [general](#general)
+    * [ui](#ui)
+    * [dev](#dev)
+    * [extension development](#extension-development)
+    * [bookmarks](#bookmarks)
+    * [rss](#rss)
+    * [tabs](#tabs)
+    * [other](#other)
+
+## about:config
+
+- [r/firefox/wiki/aboutconfig](https://www.reddit.com/r/firefox/wiki/aboutconfig) - Advanced settings tweaking subreddit
+
+- [about:config entries](http://kb.mozillazine.org/About:config_entries) - reference to the entries in about:config
+
+- [Privacy Related Tweaks](https://www.privacytools.io/browsers/#about_config) - Collection of privacy-related tweaks thats shows you how to enhance the privacy of browser
+
+- [overview of about:config](https://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/) - security and privacy preferences
+
+- [mozillazine.org](http://kb.mozillazine.org/Category:Security_and_privacy-related_preferences) - Security and privacy-related preferences.
+
 ## userChrome.css
+
+- [r/firefox/wiki/userchrome](https://www.reddit.com/r/firefox/wiki/userchrome) - Customizing the Firefox UI with CSS
 
 - [Aris-t2/CustomCSSforFx](https://github.com/Aris-t2/CustomCSSforFx) - custom CSS tweaks for Firefox Quantum
 
 - [Classic CSS tweaks](https://github.com/Aris-t2/CustomCSSforFx/issues/2#show_issue) - A lot of excellent information regarding userChrome.css
 
-- [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - a community maintained repository of userChrome.css tweaks for Firefox
+- [Timvde/UserChrome-Tweaks](https://github.com/Timvde/UserChrome-Tweaks) - a community maintained repository of userChrome.css tweaks
 
 - [stonecrusher/simpleMenuWizard](https://github.com/stonecrusher/simpleMenuWizard) - Hide contextmenu items in Firefox
+
+- [Photon Design System](https://design.firefox.com/photon) - Guidelines, reusable UI components, templates, and other resources.
+  - [Firefox Colors Pallete](https://design.firefox.com/photon/visuals/color.html)
 
 ## userChrome.js
 - [dupontjoy/userChrome.js-Collections](https://github.com/dupontjoy/userChrome.js-Collections-) - UC scripts collections
@@ -22,7 +56,7 @@
 
 - [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
 
-- <details>
+<!-- - <details>
     <summary>used scripts</summary>
 
     - [aboutbutton](https://github.com/Endor8/userChrome.js/tree/master/aboutbutton)
@@ -32,19 +66,19 @@
     - [About Config Button](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigbutton)
 
     - [About Config Multiple Selection](https://github.com/Endor8/userChrome.js/tree/master/aboutconfigmultipleselection)
-  </details>
+  </details> -->
 
 ## user.js
 
-- [gocom/pinceau](https://github.com/gocom/pinceau) - Personal Firefox userChrome and preference customizations
+- [ghacksuserjs/ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js) - an ongoing comprehensive user.js template for configuring and hardening Firefox privacy, security and anti-fingerprinting
 
-- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - firefox configuration hardening
+- [pyllyukko/user.js](https://github.com/pyllyukko/user.js) - This is a user.js configuration file to harden Firefox's settings and make it more secure
+
+- [gocom/pinceau](https://github.com/gocom/pinceau) - Personal Firefox userChrome and preference customizations
 
 - [user.js](http://kb.mozillazine.org/User.js_file) - configuration file for Firefox designed to harden browser settings and make it more secure
 
-- [ghacksuserjs/ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js) - an ongoing comprehensive user.js template for configuring and hardening Firefox privacy, security and anti-fingerprinting
-
-## Themes
+## themes
 
 - [muckSponge/MaterialFox](https://github.com/muckSponge/MaterialFox) - A Material Design-inspired userChrome.css theme for Firefox
 
@@ -54,14 +88,14 @@
 
 - [FOXSCAPEuC by Michael Walden](mw.rat.bz/foxscapeuc/) - a full featured retro theme for Firefox that makes Firefox look like Netscape 4.x, Netscape 6+ "Classic" theme
 
-## Other documentation
-- [Add-ons — server](https://addons-server.readthedocs.io/en/latest/topics/api/addons.html) - Add-ons API documentation
+## tutorials and documentations
+- [Add-ons server](https://addons-server.readthedocs.io/en/latest/topics/api/addons.html) - Add-ons API documentation
 
 - [Source Tree Docs](https://firefox-source-docs.mozilla.org/index.html#) - Mozilla Source Tree Docs 69.0a1 documentation
 
 - [Are We XBL Still?](https://bgrins.github.io/xbl-analysis/) - site contains tools for understanding and working with XBL code in Firefox to make it easier to replace
 
-- [Searchfox](https://searchfox.org) -  Searchfox is a source code indexing tool for Mozilla Firefox.
+- [Searchfox](https://searchfox.org) - Searchfox is a source code indexing tool for Mozilla Firefox.
 
 - [firefox-source-docs](https://firefox-source-docs.mozilla.org) - Mozilla Source Tree Docs 69.0a1 documentation
 
@@ -71,11 +105,7 @@
 
 - [File I/O | MDN](https://developer.mozilla.org/en-US/docs/Archive/Add-ons/Code_snippets/File_I_O#Getting_special_files) - a full listing of directory tokens
 
-- [about:config entries](http://kb.mozillazine.org/About:config_entries) - reference to the entries in about:config
-
-- [overview of about:config](https://www.ghacks.net/overview-firefox-aboutconfig-security-privacy-preferences/) - security and privacy preferences
-
-## Extensions
+## extensions
 
 ### general
 
@@ -195,7 +225,7 @@
 
 - [Feed Preview](https://addons.mozilla.org/en-US/firefox/addon/feed-preview/) - Indicates available RSS and Atom feeds and renders previews
 
-### other
+### tabs
 
 - [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
 
@@ -205,4 +235,15 @@
 
 - [Focus On Left Tab After Closing](https://addons.mozilla.org/en-US/firefox/addon/focus-on-left-tab-aft-closing/) - Activate the left tab when a current tab is closed.
 
+### other
+
 - [I'm not robot captcha clicker](https://addons.mozilla.org/en-US/firefox/addon/i-m-not-robot-captcha-clicker/) - I'm not robot captcha automatic clicker
+
+- [Privacy Settings](https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/) - Alter built-in privacy settings easily with a toolbar panel. [![github][github-logo]](https://github.com/schomery/privacy-settings)
+
+<!--Definitions-->
+
+<!-- [github-image]: https://img.icons8.com/material-outlined/20/000000/github.png -->
+[github-logo]: https://img.icons8.com/material-outlined/24/000000/github.png
+[github-url]: https://github.com/schomery/privacy-settings
+
