@@ -21,6 +21,9 @@ user_pref("layout.spellcheckDefault", 0);
 // enable alt+click on the link for download without prompts
 user_pref("browser.altClickSave", true);
 
+// display all plugins in the Download Actions dialog
+user_pref("browser.download.hide_plugins_without_extensions", false);
+
 // save files with unknown mime type
 user_pref("browser.helperApps.neverAsk.saveToDisk", "application/msword, application/csv, application/ris, text/csv, image/png, image/svg+xml, application/pdf, text/html, text/plain, application/zip, application/x-zip, application/x-zip-compressed, application/download, application/octet-stream");
 
@@ -51,7 +54,7 @@ user_pref("extensions.screenshots.disabled", true);
 user_pref("browser.bookmarks.autoExportHTML", true);
 
 // define the number of bookmarks backups
-user_pref("browser.bookmarks.max_backups", 15);
+user_pref("browser.bookmarks.max_backups", 5);
 
 //
 // ─── BEHAVIOUR ───────────────────────────────────────────────────────────────
@@ -97,12 +100,15 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.in-content.dark-mode", true);
 user_pref("ui.systemUsesDarkTheme", 1);
 
+user_pref("browser.display.background_color", "#D3D3D3");
+
 // move sidebar to right
 user_pref("sidebar.position_start", false);
 
 // disable autoplay
-user_pref("media.autoplay.enabled", false);
+// user_pref("media.autoplay.enabled", false);
 user_pref("media.autoplay.default", 1);
+user_pref("media.autoplay.allow-muted", false);
 
 user_pref("media.videocontrols.picture-in-picture.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);
@@ -181,7 +187,7 @@ user_pref("browser.urlbar.decodeURLsOnCopy", true);
 user_pref("browser.urlbar.matchBuckets", "general:4,suggestion:infinity");
 
 // disable one-click search engines
-user_pref("d", false);
+user_pref("browser.urlbar.oneOffSearches", false);
 
 // speeds up the search response
 user_pref("browser.urlbar.delay", 0);
@@ -251,7 +257,7 @@ user_pref("browser.send_pings.require_same_host", true);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 
-user_pref("extensions.htmlaboutaddons.enabled", false);
+user_pref("extensions.htmlaboutaddons.enabled", true);
 user_pref("extensions.htmlaboutaddons.inline-options.enabled", false);
 
 // disable add-on abuse reporting
@@ -327,7 +333,14 @@ user_pref("devtools.selfxss.count", 100);
 user_pref("devtools.dom.enabled", true);
 
 // devtools tabs order
-user_pref("devtools.toolbox.tabsOrder", "inspector,webconsole,styleeditor,jsdebugger,dom,performance,memory,netmonitor,storage,accessibility");
+user_pref("devtools.toolbox.tabsOrder", "inspector,webconsole,netmonitor,styleeditor,dom,jsdebugger,performance,memory,storage,accessibility");
+
+user_pref("devtools.inspector.three-pane-enabled", true);
+
+user_pref("devtools.toolbox.footer.height", 359);
+user_pref("devtools.toolsidebar-height.inspector", 350);
+user_pref("devtools.toolsidebar-width.inspector", 350);
+user_pref("devtools.toolsidebar-width.inspector.splitsidebar", 350);
 
 // copy screenshots to the clipboard
 user_pref("devtools.screenshot.clipboard.enabled", true);

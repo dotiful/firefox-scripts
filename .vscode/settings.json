@@ -1,8 +1,5 @@
 {
   "eslint.enable": true,
   "files.defaultLanguage": "javascript",
-  "files.exclude": {
-
-  },
   "editor.autoClosingQuotes": "always"
 }
