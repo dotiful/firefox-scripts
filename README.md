@@ -46,6 +46,7 @@
 
 - [Photon Design System](https://design.firefox.com/photon) - Guidelines, reusable UI components, templates, and other resources.
   - [Firefox Colors Pallete](https://design.firefox.com/photon/visuals/color.html)
+  - [Icons Library](https://design.firefox.com/icons/viewer/#)
 
 ## userChrome.js
 - [dupontjoy/userChrome.js-Collections](https://github.com/dupontjoy/userChrome.js-Collections-) - UC scripts collections

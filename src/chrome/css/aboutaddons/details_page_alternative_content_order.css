@@ -1,0 +1,24 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+
+	.card.addon-detail vbox {
+		position: relative;
+	}
+
+	#detail-controls {
+	  position: absolute;
+		right: 0;
+		top: 8px;
+	}
+
+	#detail-contributions {
+	  -moz-box-ordinal-group: 10 !important;
+	}
+
+	#detail-desc-container {
+	  -moz-box-ordinal-group: 11 !important;
+	}
+}

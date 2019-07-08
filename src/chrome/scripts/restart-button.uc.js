@@ -1,67 +1,41 @@
-// Restart button script for Firefox 60+ by Aris
-//
-// left-click on restart button: normal restart
-// middle-click on restart button: restart + clear caches
-// right-click on restart button: no special function
-//
-// based on 'Quit' button code by 2002Andreas
-// restart code from Classic Theme Restorer add-on
-// invalidate caches from Session Saver add-on
 
 (function() {
+  if (location != 'chrome://browser/content/browser.xul' && location != 'chrome://browser/content/browser.xhtml')
+  return;
+
   try {
-    Components.utils.import("resource:///modules/CustomizableUI.jsm");
-    var {Services} = Components.utils.import("resource://gre/modules/Services.jsm", {});
-    var sss = Components.classes["@mozilla.org/content/style-sheet-service;1"].getService(Components.interfaces.nsIStyleSheetService);
-
-    var button_label = "Restart";
-
-    try {
-      switch (document.getElementById("nav-bar").getAttribute("aria-label")) {
-      case "Navigations-Symbolleiste": button_label = "Neustarten"; break;
-      case "Панель навигации": button_label = "Перезапустить"; break;
-      }
-    } catch(e) {}
-
     CustomizableUI.createWidget({
-      id: "uc-restart", // button id
+      id: 'restart-button',
+      type: 'custom',
       defaultArea: CustomizableUI.AREA_NAVBAR,
-      removable: true,
-      label: button_label, // button title
-      tooltiptext: button_label, // tooltip title
-      onClick: function(event) {
-        var cancelQuit   = Components.classes["@mozilla.org/supports-PRBool;1"].createInstance(Components.interfaces.nsISupportsPRBool);
-        var observerSvc  = Components.classes["@mozilla.org/observer-service;1"].getService(Components.interfaces.nsIObserverService);
-
-        if(event.button=='1') { // middle-click - clear caches
-          Components.classes["@mozilla.org/xre/app-info;1"].getService(Components.interfaces.nsIXULRuntime).invalidateCachesOnRestart();
-        }
-
-        if(event.button=='0' || event.button=='1') { // left/middle-click - restart
-          observerSvc.notifyObservers(cancelQuit, "quit-application-requested", "restart");
-
-        if(cancelQuit.data) return false;
-          Services.startup.quit(Services.startup.eRestart | Services.startup.eAttemptQuit);
-        }
-      },
-      onCreated: function(button) {
-        return button;
+      onBuild: function(aDocument) {
+        var toolbaritem = aDocument.createElementNS('http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul', 'toolbarbutton');
+        toolbaritem.onclick = event => onClick(event);
+        var props = {
+          id: 'restart-button',
+          class: 'toolbarbutton-1 chromeclass-toolbar-additional',
+          label: 'Restart',
+          tooltiptext: 'Restart and delete startupCache)',
+          style: 'list-style-image: url(chrome://browser/skin/sync.svg)'
+        };
+        for(var p in props)
+          toolbaritem.setAttribute(p, props[p]);
+        return toolbaritem;
       }
     });
+  } catch(e) {};
 
-    // style button icon
-    var uri = Services.io.newURI("data:text/css;charset=utf-8," + encodeURIComponent('\
-    \
-      #uc-restart .toolbarbutton-icon {\
-        list-style-image: url("chrome://browser/skin/reload.svg"); /* icon / path to icon */ \
-        transform: scaleX(-1); /* icon mirroring */\
-        fill: #bc6b6c; /* icon color name/code */\
-      }\
-    \
-    '), null, null);
+  function onClick(event) {
+    if(event.button == 1)
+      Services.appinfo.invalidateCachesOnRestart();
+    else if(event.button == 2)
+      return;
 
-    sss.loadAndRegisterSheet(uri, sss.AGENT_SHEET);
-  } catch (e) {
-    Components.utils.reportError(e);
-  };
+    let cancelQuit = Cc["@mozilla.org/supports-PRBool;1"].createInstance(Ci.nsISupportsPRBool);
+
+    Services.appinfo.invalidateCachesOnRestart();
+    Services.obs.notifyObservers(cancelQuit, "quit-application-requested", "restart");
+    if(!cancelQuit.data)
+      Services.startup.quit(Services.startup.eAttemptQuit | Services.startup.eRestart);
+  }
 })();

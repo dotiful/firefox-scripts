@@ -254,11 +254,13 @@ user_pref("browser.send_pings.require_same_host", true);
 // ─── EXTENSIONS ──────────────────────────────────────────────────────────────
 //
 
+// disable new html add-ons manager
+user_pref("extensions.htmlaboutaddons.enabled", false);
+// inline options browser for html add-ons manager details
+user_pref("extensions.htmlaboutaddons.inline-options.enabled", false);
+
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
-
-user_pref("extensions.htmlaboutaddons.enabled", true);
-user_pref("extensions.htmlaboutaddons.inline-options.enabled", false);
 
 // disable add-on abuse reporting
 user_pref("extensions.abuseReport.enabled", false);
