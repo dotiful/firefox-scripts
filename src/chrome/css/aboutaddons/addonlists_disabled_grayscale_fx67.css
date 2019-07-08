@@ -1,0 +1,10 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+#main addon-list .list-section-heading[data-l10n-id="addons-disabled-heading"] ~ addon-card {
+  filter: grayscale(1);
+}

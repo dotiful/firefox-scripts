@@ -1,0 +1,24 @@
+@import "./addons_manager_full_width.css";
+
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+body > #main {
+  max-width: unset !important;
+  margin-inline-end: var(--addons_manager_full_width_gutter) !important;
+  /* margin-inline-start: var(--addons_manager_full_width_gutter) !important; */
+  /* margin-bottom: var(--addons_manager_full_width_gutter) !important; */
+  /* padding-inline-start: var(--addons_manager_full_width_gutter) !important; */
+  /* padding-inline-end: var(--addons_manager_full_width_gutter) !important; */
+}
+
+.list-view-heading-inner {
+  -moz-box-flex: 1 !important;
+  width: unset !important;
+}
+
+/*
+
+body > div#main > div.list-section .addon.card {
+  margin-bottom: 4px !important;
+}*/

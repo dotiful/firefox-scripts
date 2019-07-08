@@ -1,0 +1,24 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+  #header-inner {
+	  /* margin: unset !important; */
+	  width: calc(100vw - 268px) !important;
+	}
+
+  #heading .heading-inner {
+    -moz-box-flex: 1 !important;
+	  width: unset !important;
+    margin-inline-end: var(--addons_manager_full_width_gutter)  !important;
+  }
+  
+  .addon.card {
+	  max-width: unset !important;
+  }
+  
+  #detail-view .detail-view-container {
+	  width: calc(100vw - 298px) !important;
+	}
+}

@@ -4,25 +4,28 @@
 / and some internal pages like about:newtab
 */
 
-/* Add-ons page */
-@-moz-document url(about:addons) {
-  /* hide extensions private browsing notice */
-  #addons-page #private-browsing-notice,
-  #addons-page .privateBrowsing-notice {
-    display: none !important;
-  }
+/* GENERAL VARIABLES ****************************************************************************/
+/* [!] set global variables for font and tab size options and more inside target file ***********/
+@import "./css/variables.css";
 
-  /* compact layout */
-  .addon.card {
-    max-width: 950px !important;
-    padding: 4px !important;
-    padding-right: 6px !important;
-    padding-left: 11px !important;
-    margin: -1px !important;
-    margin-top: 4px !important;
-    font-size: 15px !important;
-    font-family: Arial !important;
-    border-radius: 7px !important;
-  }
-}
 
+/* @import "./css/aboutaddons/addons_manager_full_width.css"; */
+@import "./css/aboutaddons/addons_manager_full_width_fx67.css";
+@import "./css/aboutaddons/addonlists_disabled_grayscale_fx67.css";
+@import "./css/aboutaddons/addonlists_private_browsing_notice_hidden.css";
+@import "./css/aboutaddons/details_page_alternative_content_order.css";
+@import "./css/aboutaddons/addonlists_replace_button_labels_with_icons.css";
+
+
+
+/* compact item lists - [only use one at a time] ************************************************/
+/* @import "./css/aboutaddons/addonlists_compact.css"; */
+/* @import "./css/aboutaddons/addonlists_compact-min.css"; */
+
+/* show 'last updated' date for add-ons - [only use one at a time] ******************************/
+/* @import "./css/customcssforfx/classic/css/aboutaddons/addonlists_show_addon_date_last_updated.css"; */
+/* @import "./css/customcssforfx/classic/css/aboutaddons/addonlists_show_addon_date_last_updated_start_position.css"; */
+
+/* other settings *******************************************************************************/
+@import "./css/customcssforfx/classic/css/aboutaddons/recentupdates_category_always_visible.css";
+/* @import "./css/customcssforfx/classic/css/aboutaddons/details_page_switch_banner_label_position_for_themes.css"; */
