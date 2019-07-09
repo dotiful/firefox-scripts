@@ -19,7 +19,7 @@
   "homepage": "https://github.com/dotiful/firefox-scripts#readme",
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-env": "^7.5.2",
     "@babel/register": "^7.4.4",
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
