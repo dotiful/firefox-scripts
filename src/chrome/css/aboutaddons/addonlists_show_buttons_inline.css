@@ -1,0 +1,46 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+@-moz-document  url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	#main addon-list .more-options-menu panel-list {
+		position: relative !important;
+	  background: unset !important;
+	  border: unset !important;
+	  box-shadow: unset !important;
+	  display: block !important;
+	  margin-top: -26px !important;
+	  min-width: unset !important;
+	  visibility: visible !important;
+		width: unset !important;
+		text-align: right;
+		-moz-appearance: none !important;
+	  -moz-margin-start: -310px !important;
+	}
+
+	#main addon-list .more-options-menu, 
+	#main addon-list .arrow {
+	  visibility: hidden !important;
+	}
+
+	#main addon-list .more-options-menu panel-list *:not([hidden]) {
+	  display: inline-grid !important;
+	  visibility: visible !important;
+	  -moz-box-orient: horizontal !important;
+	  -moz-appearance: none !important;
+	  min-width: unset !important;
+	  width: unset !important;
+	  padding: 0 !important;
+	  margin: 0 !important;
+	}
+
+	#main addon-list .more-options-menu panel-item {
+	  /* padding: 2px 5px !important;  */
+		border: 1px solid lightgrey !important;
+		--icon: unset !important;
+	}
+
+	#main addon-list .more-options-menu panel-item[data-l10n-id="expand-addon-button"] {
+		display: none !important;
+	}
+}
