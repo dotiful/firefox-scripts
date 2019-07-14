@@ -1,0 +1,65 @@
+/*AGENT_SHEET*/
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* === Mehrzeilige Tableiste === */
+
+/* Titel-Leistenschaltflächen */
+#titlebar,#titlebar-buttonbox {
+    height: 32px !important;
+}
+#titlebar {
+    margin-bottom: -32px !important;
+}
+#main-window[sizemode="maximized"] #titlebar {
+    margin-bottom: -24px !important;
+}
+/* Tab-Leiste */
+#tabbrowser-tabs,
+.tabbrowser-arrowscrollbox {
+    min-height: 32px !important;
+}
+
+/* Anzahl der Tabreihen muss nicht mehr angegeben werden */
+
+/* Wenn Sie die Anzahl der Tabs über die angegebene Anzahl von Stufen hinaus erhöhen, */
+/* werden die angezeigten Bildlaufleisten mit Mausklicks und Rädern verschoben */
+#main-window[tabsintitlebar] #tabbrowser-tabs {
+    -moz-window-dragging: no-drag !important;
+}
+.tabbrowser-arrowscrollbox {
+    -moz-binding: url("chrome://global/content/bindings/scrollbox.xml#arrowscrollbox") !important;
+}
+/* Anzahl der Tabschritte */
+#tabbrowser-tabs .scrollbox-innerbox {
+    max-height: calc( 32px * 5 ) !important;/* Zahl nach 32px ist Anzahl der Tabreihen */
+}
+
+/* Verschiedene Einstellungen */
+
+/* Tabs */
+#tabbrowser-tabs .arrowscrollbox-scrollbox {
+    overflow: visible !important;
+    display: block !important;
+}
+#tabbrowser-tabs .scrollbox-innerbox {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    overflow-y: auto !important;
+}
+.tabbrowser-tab:not([pinned]) {
+    flex-grow: 1 !important;
+    display: -webkit-box !important;
+    min-height: 32px !important;
+}
+.tab-stack {
+     width: 100% !important;
+    height: 100% !important;
+}
+/* -- Ausblenden -- */
+#tabbrowser-tabs .scrollbutton-up,
+#tabbrowser-tabs .scrollbutton-down,
+#tabbrowser-tabs .autorepeatbutton-up,
+#tabbrowser-tabs .autorepeatbutton-down,
+#alltabs-button {
+    display: none !important;
+}

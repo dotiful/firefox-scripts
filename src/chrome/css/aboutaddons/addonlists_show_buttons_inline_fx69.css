@@ -1,0 +1,22 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/aboutaddons.html) {
+	#main addon-list .more-options-menu panel-item[data-l10n-id="enable-addon-button"] {
+		--icon: url("chrome://browser/skin/zoom-out.svg") !important;
+	}
+	
+	#main addon-list .more-options-menu panel-item[data-l10n-id="disable-addon-button"] {
+		--icon: url("chrome://browser/skin/zoom-in.svg") !important;
+	}
+	
+	#main addon-list .more-options-menu panel-item[data-l10n-id="install-update-button"] {
+		--icon: url("chrome://browser/skin/chevron.svg") !important;
+	}
+
+	#main addon-list .more-options-menu panel-item[data-l10n-id="preferences-addon-button"] {
+		--icon: url("chrome://browser/skin/settings.svg") !important;
+	}
+}

@@ -1,1 +1,9 @@
+.*
+chrome/*
+custom/*
+node_modules/*
+
 .markdownlint.json
+package.json
+
+README.md

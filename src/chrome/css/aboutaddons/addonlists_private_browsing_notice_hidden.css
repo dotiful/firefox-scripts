@@ -1,0 +1,22 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+/* old version */
+/* user_pref(“extensions.htmlaboutaddons.enabled”,false); */
+@-moz-document url(about:addons) {
+  #addons-page #private-browsing-notice,
+  #addons-page .privateBrowsing-notice {
+    display: none !important;
+  }
+}
+
+/* new version */
+/* user_pref(“extensions.htmlaboutaddons.enabled”,true); */
+@namespace html "http://www.w3.org/1999/xhtml";
+@namespace xul "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
+
+.addon-badge-private-browsing-allowed {
+	display: none !important;
+}
+

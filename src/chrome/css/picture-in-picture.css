@@ -1,0 +1,9 @@
+
+
+@-moz-document url(chrome://global/content/pictureinpicture/player.xhtml){
+  #close{ opacity: 1 !important; }
+}
+
+@-moz-document url(chrome://global/content/pictureinpicture/player.xhtml){
+  html|div#close{ opacity: 1 !important; }
+}
