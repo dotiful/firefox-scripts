@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "eslint-config-standard",
+    "prettier",
+    "prettier/standard"
+  ],
+  "env": {
+    "es6":  true,
+    "node": true
+  },
+  "globals": {
+    "user_pref": "readonly"
+  },
+  "plugins": [
+    "json",
+    "prettier"
+  ],
+  "rules": {
+    "max-len": "warn",
+    "prettier/prettier": "error"
+  },
+  "overrides": [
+    {
+      "files": ["src/user.js"],
+      "rules": {
+        "quotes": ["error", "double"]
+      }
+    }
+  ]
+}

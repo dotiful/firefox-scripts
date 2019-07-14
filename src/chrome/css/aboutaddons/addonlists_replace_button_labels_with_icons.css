@@ -1,0 +1,47 @@
+/* Firefox Quantum userChrome.css tweaks ************************************************/
+/* Github: https://github.com/aris-t2/customcssforfx ************************************/
+/****************************************************************************************/
+
+
+@-moz-document url-prefix(chrome://mozapps/content/extensions/extensions.xul), url-prefix(about:addons) {
+	button[anonid="preferences-btn"].addon-control image {
+	  list-style-image: url("chrome://browser/skin/settings.svg");
+	}
+	button[anonid="install-remote-btn"].addon-control image,
+	button[anonid="enable-btn"].addon-control image {
+	  list-style-image: url("chrome://browser/skin/zoom-in.svg");
+	}
+	button[anonid="disable-btn"].addon-control image {
+	  list-style-image: url("chrome://browser/skin/zoom-out.svg");
+	}
+	button[anonid="remove-btn"].addon-control image {
+	  list-style-image: url("chrome://browser/skin/stop.svg");
+	}
+	button[anonid="update-btn"].addon-control image {
+	  list-style-image: url("chrome://browser/skin/chevron.svg");
+	  transform: rotate(-90deg);
+	}
+	
+	button[anonid].addon-control {
+		/* min-width: unset !important; */
+		background-color: var(--grey-60);
+		color: var(--grey-10);
+		padding: 6px !important;
+		-moz-context-properties: fill;
+		fill: currentColor;
+	}
+
+	button[anonid="install-remote-btn"].addon-control label,
+	button[anonid="preferences-btn"].addon-control label,
+	button[anonid="enable-btn"].addon-control label,
+	button[anonid="disable-btn"].addon-control label,
+	button[anonid="remove-btn"].addon-control label,
+	button[anonid="update-btn"].addon-control label {
+	  visibility: collapse;
+	}
+
+	button.addon-control image {
+		display: block !important;
+	}
+	
+}
