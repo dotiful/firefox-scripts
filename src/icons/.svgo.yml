@@ -1,0 +1,59 @@
+full: true
+
+# plugins options
+# @see https://github.com/svg/svgo/blob/master/README.md
+
+plugins:
+  - cleanupAttrs: true
+  - inlineStyles: true
+  - removeDoctype: true
+  - removeXMLProcInst: true
+  - removeComments
+  - removeMetadata
+  - removeTitle: true
+  - removeDesc: true
+  - removeUselessDefs: true
+  - removeXMLNS: false
+  - removeEditorsNSData
+  - removeEmptyAttrs: true
+  - removeHiddenElems
+  - removeEmptyText
+  - removeEmptyContainers: true
+  - removeViewBox
+  - cleanupEnableBackground
+  - minifyStyles
+  - convertStyleToAttrs: true
+  - convertColors
+  - convertPathData
+  - convertTransform
+  - removeUnknownsAndDefaults: true
+  - removeNonInheritableGroupAttrs
+  - removeUselessStrokeAndFill: true
+  - removeUnusedNS
+  - prefixIds
+  - cleanupIDs: true
+  - cleanupNumericValues
+  - cleanupListOfValues
+  - moveElemsAttrsToGroup
+  - moveGroupAttrsToElems
+  - collapseGroups: true
+  - removeRasterImages: true
+  - mergePaths
+  - convertShapeToPath
+  - sortAttrs: true
+  - removeDimensions: true
+  - removeAttrs
+  - removeAttributesBySelector
+  - removeElementsByAttr
+  - addClassesToSVGElement
+  - addAttributesToSVGElement
+  - removeOffCanvasPaths
+  - removeStyleElement
+  - removeScriptElement
+  - reusePaths
+
+# config options
+# @see https://github.com/svg/svgo/blob/master/lib/svgo/js2svg.js#L6
+js2svg:
+  pretty: true
+  indent: '  '
