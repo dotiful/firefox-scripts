@@ -3560,10 +3560,10 @@ htmlparser2@^3.10.0:
     inherits "^2.0.1"
     readable-stream "^3.1.1"
 
-husky@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.4.tgz#10a48ac11ab50859b0939750fa0b4e07ad0bf669"
-  integrity sha512-7Rnt8aJfy+MlV28snmYK7O7vWwtOfeVxV6KhLpUFXlmx5ukQ1nQmNUB7QsAwSgdySB5X+bm7q7JIRgazqBUzKA==
+husky@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-3.0.6.tgz#035aa2c0ae992a131fc72fcb410f1758daad1147"
+  integrity sha512-bNTgujuC5VS0m8gK70zRpzXq9rccFUFcjuU6L/SFLZxV7eke+6x10Tpk+st3rmgCEsQ4vn+yJk1jx3gvSD8knQ==
   dependencies:
     chalk "^2.4.2"
     cosmiconfig "^5.2.1"
