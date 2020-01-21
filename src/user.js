@@ -7,7 +7,7 @@
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // display about:config normally without a warning
-user_pref("general.warnOnAboutConfig", false);
+user_pref("browser.aboutConfig.showWarning", false);
 
 // change the interface language "en-US/ru-RU"
 user_pref("intl.locale.requested", "en-US");
