@@ -3,10 +3,10 @@
 [![Dependency Status](https://david-dm.org/dotiful/firefox-scripts.svg)](https://david-dm.org/dotiful/firefox-scripts)
 [![devDependency Status](https://david-dm.org/dotiful/firefox-scripts/dev-status.svg)](https://david-dm.org/dotiful/firefox-scripts#info=devDependencies)
 
-* [Firefox Scripts](#Firefox-Scripts)
+* [Firefox Scripts](#firefox-scripts)
   * [about:config](#aboutconfig)
-  * [userChrome.css](#userChromecss)
-  * [userChrome.js](#userChromejs)
+  * [userChrome.css](#userchromecss)
+  * [userChrome.js](#userchromejs)
   * [user.js](#userjs)
   * [themes](#themes)
   * [tutorials and documentations](#tutorials-and-documentations)
@@ -16,8 +16,8 @@
     * [dev](#dev)
     * [extension development](#extension-development)
     * [bookmarks](#bookmarks)
-    * [rss](#rss)
     * [tabs](#tabs)
+    * [rss](#rss)
     * [other](#other)
 
 ## about:config
@@ -110,11 +110,13 @@
 
 ### general
 
-- [Surfingkeys](https://addons.mozilla.org/en-US/firefox/addon/surfingkeys_ff/?src=search) - Map your keys for web surfing, expand your browser with javascript and keyboard
+- [Surfingkeys](https://addons.mozilla.org/en-US/firefox/addon/surfingkeys_ff/?src=search) - Map your keys for web surfing, expand your browser with javascript and keyboard [![github][github-logo]](https://github.com/)
 
-- [Tampermonkey](https://addons.mozilla.org/ru/firefox/addon/tampermonkey/) - Tampermonkey is the world's most popular userscript manager
+- [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage [![github][github-logo]](https://github.com/Hau-Hau/firefox-tab-suspender)
 
-- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate/) - Quickly translate selected text on web page
+- [Tampermonkey](https://addons.mozilla.org/ru/firefox/addon/tampermonkey/) - Tampermonkey is the world's most popular userscript manager [![github][github-logo]](https://github.com/brookhong/Surfingkeys)
+
+- [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate/) - Quickly translate selected text on web page [![github][github-logo]](https://github.com/sienori/simple-translate)
   <details>
     <summary>settings</summary>
 
@@ -160,25 +162,9 @@
     ----
   </details>
 
-- [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) - Use native tab discard method to automatically reduce memory usage of inactive tabs
-  <details>
-    <summary>settings</summary>
-
-    ### Discarding options
-
-    | **key**                     | **value**          |
-    |-----------------------------|--------------------|
-    | discard after               | 600ms              |
-    | when number of tabs exceeds | 3                  |
-    | display in context menu     | false              |
-    | do not discard when offline | true               |
-    | toolbar click action        | discard other tabs |
-    ----
-  </details>
-
 - [1Password X](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/?src=collection) - The best way to experience 1Password in your browser
 
-- [Adguard AdBlocker](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/?src=search) - Unmatched adblock extension against advertising and pop-ups
+- [Adguard AdBlocker](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/?src=search) - Unmatched adblock extension against advertising and pop-ups [![github][github-logo]](https://github.com/AdguardTeam/AdguardBrowserExtension)
 
 ### ui
 
@@ -220,21 +206,35 @@
 
 - [Raindrop.io](https://addons.mozilla.org/en-US/firefox/addon/raindropio/) - Keep your favorites handy
 
+### tabs
+
+- [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) - Use native tab discard method to automatically reduce memory usage of inactive tabs
+  <details>
+    <summary>settings</summary>
+
+    ### Discarding options
+
+    | **key**                     | **value**          |
+    |-----------------------------|--------------------|
+    | discard after               | 600ms              |
+    | when number of tabs exceeds | 3                  |
+    | display in context menu     | false              |
+    | do not discard when offline | true               |
+    | toolbar click action        | discard other tabs |
+    ----
+  </details>
+
+- [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
+
+- [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) - Multi-Account Containers lets you keep parts of your online life separated into color-coded tabs that preserve your privacy
+
+- [Focus On Left Tab After Closing](https://addons.mozilla.org/en-US/firefox/addon/focus-on-left-tab-aft-closing/) - Activate the left tab when a current tab is closed.
+
 ### rss
 
 - [Feed Indicator](https://addons.mozilla.org/en-US/firefox/addon/feed-indicator/?src=search) - Adds an icon to indicate RSS/Atom feeds to address bar and previews a feed
 
 - [Feed Preview](https://addons.mozilla.org/en-US/firefox/addon/feed-preview/) - Indicates available RSS and Atom feeds and renders previews
-
-### tabs
-
-- [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
-
-- [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage
-
-- [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) - Multi-Account Containers lets you keep parts of your online life separated into color-coded tabs that preserve your privacy
-
-- [Focus On Left Tab After Closing](https://addons.mozilla.org/en-US/firefox/addon/focus-on-left-tab-aft-closing/) - Activate the left tab when a current tab is closed.
 
 ### other
 
