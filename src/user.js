@@ -43,7 +43,7 @@ user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-f
 user_pref("dom.disable_beforeunload", true);
 
 // disable screenshots
-user_pref("extensions.screenshots.disabled", true);
+// user_pref("extensions.screenshots.disabled", true);
 
 
 //
