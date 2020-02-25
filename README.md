@@ -49,13 +49,14 @@
   - [Icons Library](https://design.firefox.com/icons/viewer/#)
 
 ## userChrome.js
-- [dupontjoy/userChrome.js-Collections](https://github.com/dupontjoy/userChrome.js-Collections-) - UC scripts collections
 
 - [Endor8/userChrome.js](https://github.com/Endor8/userChrome.js) - Scripts for the Firefox extension userChrome.js
 
+- [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
+
 - [Aris-t2/CustomJSforFx](https://github.com/Aris-t2/CustomJSforFx) - custom scripts
 
-- [xiaoxiaoflood/firefox-scripts](https://github.com/xiaoxiaoflood/firefox-scripts) - userChromeJS / autoconfig.js and extensions
+- [dupontjoy/userChrome.js-Collections](https://github.com/dupontjoy/userChrome.js-Collections-) - UC scripts collections
 
 <!-- - <details>
     <summary>used scripts</summary>
@@ -168,9 +169,11 @@
 
 ### ui
 
-- [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) - Easily install custom themes from popular online repositories, or create, edit, and manage your own personalized CSS stylesheets
+- [Stylus](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) - Easily install custom themes from popular online repositories, or create, edit, and manage your own personalized CSS stylesheets [![github][github-logo]](https://github.com/openstyles/stylus)
 
-- [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/?src=collection) - Dark mode for every website
+- [Dark Reader](https://addons.mozilla.org/en-US/firefox/addon/darkreader/?src=collection) - Dark mode for every website [![github][github-logo]](https://github.com/darkreader/darkreader)
+
+- [DmitriK/darkContrast](https://github.com/DmitriK/darkContrast) - Fixes low contrast text when using dark desktop theme [![github][github-logo]](https://github.com/DmitriK/darkContrast)
 
 ### dev
 

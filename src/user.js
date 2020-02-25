@@ -25,6 +25,7 @@ user_pref("browser.altClickSave", true);
 user_pref("browser.download.hide_plugins_without_extensions", false);
 
 // save files with unknown mime type
+// eslint-disable-next-line prettier/prettier
 user_pref("browser.helperApps.neverAsk.saveToDisk", "application/msword, application/csv, application/ris, text/csv, image/png, image/svg+xml, application/pdf, text/html, text/plain, application/zip, application/x-zip, application/x-zip-compressed, application/download, application/octet-stream");
 
 // disable auto install updates
@@ -43,7 +44,8 @@ user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-f
 user_pref("dom.disable_beforeunload", true);
 
 // disable screenshots
-// user_pref("extensions.screenshots.disabled", true);
+// eslint-disable-next-line prettier/prettier
+user_pref("extensions.screenshots.disabled", true);
 
 
 //
@@ -72,7 +74,7 @@ user_pref("browser.link.open_newwindow", 1);
 // 0 = apply the setting under (A) to ALL new windows (even script windows)
 // 2 = apply the setting under (A) to normal windows, but NOT to script windows with features (default)
 // 1 = override the setting under (A) and always use new windows
-user_pref("browser.link.open_newwindow.restriction", 0);
+user_pref("browser.link.open_newwindow.restriction", 2);
 
 // for links in other programs
 // -1 = apply the setting under (A) to external links (default)
@@ -96,11 +98,15 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 // ─── UI ──────────────────────────────────────────────────────────────────────
 //
 
+// tiny bars
+user_pref("browser.uidensity", 1);
+user_pref("browser.tabs.extraDragSpace", true);
+
 // enable dark-mode
 user_pref("browser.in-content.dark-mode", true);
 user_pref("ui.systemUsesDarkTheme", 1);
 
-user_pref("browser.display.background_color", "#D3D3D3");
+// user_pref("browser.display.background_color", "#D3D3D3");
 
 // move sidebar to right
 user_pref("sidebar.position_start", false);
@@ -116,14 +122,24 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);
 // disable zoom with cmd+scroll
 user_pref("mousewheel.with_meta.action", 1);
 
+// fix the dark theme bug
+user_pref("widget.content.gtk-theme-override", "Adwaita:light");
+user_pref("widget.content.allow-gtk-dark-theme", true);
+
+
+/* READER MODE─────────────────────────────────────────────────────────────── */
+// enable dark theme
+user_pref("reader.color_scheme", "dark");
+user_pref("reader.content_width", 7);
+
 /* TABS ───────────────────────────────────────────────────────────────────── */
 
 // tab audio icon
 user_pref("browser.tabs.showAudioPlayingIcon", true);
 
 // materialfox
-user_pref("materialFox.reduceTabOverflow", true);
-user_pref("svg.context-properties.content.enabled", true);
+// user_pref("materialFox.reduceTabOverflow", true);
+// user_pref("svg.context-properties.content.enabled", true);
 
 // always show tab close button
 user_pref("browser.tabs.closeButtons", 1);
@@ -143,10 +159,10 @@ user_pref("browser.startup.page", 3);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 4);
 
 // pinned sites top sites
-user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://github.com/\",\"label\":\"github\"},{\"url\":\"https://gist.github.com/dotiful?direction=deschttps://gist.github.com/dotiful?direction=desc&sort=updated\",\"label\":\"gists\"},{\"url\":\"https://github.com/dotiful?tab=stars\",\"label\":\"stars\"},{\"url\":\"https://gitlab.com/?nav_source=navbar\",\"label\":\"gitlab\",\"customScreenshotURL\":\"https://i.imgur.com/AGSiONj.png\"},{\"url\":\"https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId\",\"label\":\"aws\",\"customScreenshotURL\":\"https://i.imgur.com/irpKuOG.png\"},{\"url\":\"https://console.cloud.google.com/home/dashboard?authuser=2&project=alfred-yt\",\"label\":\"GCP\",\"customScreenshotURL\":\"https://i.imgur.com/XUwMPRs.png\"},{\"url\":\"https://dash.cloudflare.com\",\"label\":\"cloudflare\",\"customScreenshotURL\":\"https://i.imgur.com/2dddPbm.png\"},{\"url\":\"https://adhome.ml/\",\"label\":\"adhome\",\"customScreenshotURL\":\"https://i.imgur.com/dgvkfMl.png\"},{\"url\":\"https://www.google.com.ua/\",\"label\":\"google\",\"customScreenshotURL\":\"https://i.imgur.com/rT7EyzQ.png\"},{\"url\":\"https://mail.google.com/mail/u/0/\",\"label\":\"artdev\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\"},{\"url\":\"https://mail.google.com/mail/u/1/\",\"label\":\"dots\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\"},{\"url\":\"https://mail.google.com/mail/u/2/\",\"label\":\"wrt\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\"},{\"url\":\"https://www.youtube.com/\",\"label\":\"youtube\",\"customScreenshotURL\":\"https://i.imgur.com/W5nyO7W.png\"},{\"url\":\"https://drive.google.com/\",\"label\":\"drive\",\"customScreenshotURL\":\"https://i.imgur.com/41EIr4Q.png\"},{\"url\":\"https://translate.google.com.ua/#view=home&op=translate&sl=auto&tl=ru\",\"label\":\"translate\",\"customScreenshotURL\":\"https://i.imgur.com/iiTj8hF.png\"},{\"url\":\"https://www.google.com.ua/maps\",\"label\":\"maps\",\"customScreenshotURL\":\"https://i.imgur.com/FSx9cpO.png\"},{\"url\":\"https://web.telegram.org/\",\"label\":\"telegram\",\"customScreenshotURL\":\"https://i.imgur.com/VijQNyZ.png\"},{\"url\":\"https://www.inoreader.com/\",\"label\":\"inoreader\",\"customScreenshotURL\":\"https://i.imgur.com/9qiR748.png\"},{\"url\":\"https://www.integromat.com/\",\"label\":\"integromat\",\"customScreenshotURL\":\"https://i.imgur.com/6FEgChu.png\"},{\"url\":\"https://twitter.com/artdevjs/lists/feed\",\"label\":\"twitter\",\"customScreenshotURL\":\"https://i.imgur.com/sfAkrOp.png\"},{\"url\":\"https://www.reddit.com/user/artdevjs/m/favs/new/\",\"label\":\"reddit\",\"customScreenshotURL\":\"https://i.imgur.com/HV6Ur0m.png\"},{\"url\":\"https://www.dropbox.com/home\",\"label\":\"dropbox\",\"customScreenshotURL\":\"https://i.imgur.com/AXrk2CR.png\"},{\"url\":\"https://bitbucket.org/dashboard/overview\",\"label\":\"bitbucket\",\"customScreenshotURL\":\"https://i.imgur.com/F6sEfIW.png\"},{\"url\":\"https://www.npmjs.com\",\"label\":\"npm\",\"customScreenshotURL\":\"https://i.imgur.com/g3ZPxyk.png\"},{\"url\":\"https://outlook.live.com/mail/inbox\",\"label\":\"outlook\",\"customScreenshotURL\":\"https://i.imgur.com/tK0xCo0.png\"},{\"url\":\"https://my.1password.com/home\",\"label\":\"1password\",\"customScreenshotURL\":\"https://i.imgur.com/PHOaimF.png\"},{\"url\":\"https://www.olx.ua/\",\"label\":\"olx\",\"customScreenshotURL\":\"https://i.imgur.com/hxq5fjB.png\"},{\"url\":\"https://artdevjs.imgur.com/all\",\"label\":\"imgur\",\"customScreenshotURL\":\"https://i.imgur.com/hMG9e10.jpg\"},{\"url\":\"http://ex-fs.net/subnews/\",\"label\":\"ex-fs\",\"customScreenshotURL\":\"https://i.imgur.com/cEmz6Sr.png\"},{\"url\":\"https://myshows.me/profile/\",\"label\":\"myshows\",\"customScreenshotURL\":\"https://i.imgur.com/1RKrjKy.png\"}]");
+user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://github.com/\",\"label\":\"github\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gist.github.com/dotiful?direction=deschttps://gist.github.com/dotiful?direction=desc&sort=updated\",\"label\":\"gists\",\"baseDomain\":\"gist.github.com\"},{\"url\":\"https://github.com/dotiful?tab=stars\",\"label\":\"stars\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gitlab.com/?nav_source=navbar\",\"label\":\"gitlab\",\"customScreenshotURL\":\"https://i.imgur.com/AGSiONj.png\",\"baseDomain\":\"gitlab.com\"},{\"url\":\"https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId\",\"label\":\"aws\",\"customScreenshotURL\":\"https://i.imgur.com/irpKuOG.png\",\"baseDomain\":\"eu-central-1.console.aws.amazon.com\"},{\"url\":\"https://console.cloud.google.com/home/dashboard?authuser=2&project=wrtdev\",\"label\":\"GCP\",\"customScreenshotURL\":\"https://i.imgur.com/XUwMPRs.png\",\"baseDomain\":\"console.cloud.google.com\"},{\"url\":\"https://dash.cloudflare.com\",\"label\":\"cloudflare\",\"customScreenshotURL\":\"https://i.imgur.com/2dddPbm.png\",\"baseDomain\":\"dash.cloudflare.com\"},{\"url\":\"https://adwrt.cf/\",\"label\":\"adhome\",\"customScreenshotURL\":\"https://i.imgur.com/dgvkfMl.png\",\"baseDomain\":\"adwrt.cf\"},{\"url\":\"https://www.google.com.ua/\",\"label\":\"google\",\"customScreenshotURL\":\"https://i.imgur.com/rT7EyzQ.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://mail.google.com/mail/u/0/\",\"label\":\"artdev\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/1/\",\"label\":\"dots\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/2/\",\"label\":\"wrt\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://www.youtube.com/\",\"label\":\"youtube\",\"customScreenshotURL\":\"https://i.imgur.com/W5nyO7W.png\",\"baseDomain\":\"youtube.com\"},{\"url\":\"https://drive.google.com/\",\"label\":\"drive\",\"customScreenshotURL\":\"https://i.imgur.com/41EIr4Q.png\",\"baseDomain\":\"drive.google.com\"},{\"url\":\"https://translate.google.com.ua/#view=home&op=translate&sl=auto&tl=ru\",\"label\":\"translate\",\"customScreenshotURL\":\"https://i.imgur.com/iiTj8hF.png\",\"baseDomain\":\"translate.google.com.ua\"},{\"url\":\"https://www.google.com.ua/maps\",\"label\":\"maps\",\"customScreenshotURL\":\"https://i.imgur.com/FSx9cpO.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://web.telegram.org/\",\"label\":\"telegram\",\"customScreenshotURL\":\"https://i.imgur.com/VijQNyZ.png\",\"baseDomain\":\"web.telegram.org\"},{\"url\":\"https://www.inoreader.com/\",\"label\":\"inoreader\",\"customScreenshotURL\":\"https://i.imgur.com/9qiR748.png\",\"baseDomain\":\"inoreader.com\"},{\"url\":\"https://www.integromat.com/\",\"label\":\"integromat\",\"customScreenshotURL\":\"https://i.imgur.com/6FEgChu.png\",\"baseDomain\":\"integromat.com\"},{\"url\":\"https://twitter.com/artdevjs/lists/feed\",\"label\":\"twitter\",\"customScreenshotURL\":\"https://i.imgur.com/sfAkrOp.png\",\"baseDomain\":\"twitter.com\"},{\"url\":\"https://www.reddit.com/user/artdevjs/m/favs/new/\",\"label\":\"reddit\",\"customScreenshotURL\":\"https://i.imgur.com/HV6Ur0m.png\",\"baseDomain\":\"reddit.com\"},{\"url\":\"https://www.dropbox.com/home\",\"label\":\"dropbox\",\"customScreenshotURL\":\"https://i.imgur.com/AXrk2CR.png\",\"baseDomain\":\"dropbox.com\"},{\"url\":\"https://bitbucket.org/dashboard/overview\",\"label\":\"bitbucket\",\"customScreenshotURL\":\"https://i.imgur.com/F6sEfIW.png\",\"baseDomain\":\"bitbucket.org\"},{\"url\":\"https://www.npmjs.com\",\"label\":\"npm\",\"customScreenshotURL\":\"https://i.imgur.com/g3ZPxyk.png\",\"baseDomain\":\"npmjs.com\"},{\"url\":\"https://outlook.live.com/mail/inbox\",\"label\":\"outlook\",\"customScreenshotURL\":\"https://i.imgur.com/tK0xCo0.png\",\"baseDomain\":\"outlook.live.com\"},{\"url\":\"https://my.1password.com/home\",\"label\":\"1password\",\"customScreenshotURL\":\"https://i.imgur.com/PHOaimF.png\",\"baseDomain\":\"my.1password.com\"},{\"url\":\"https://www.olx.ua/myaccount/\",\"label\":\"olx\",\"customScreenshotURL\":\"https://i.imgur.com/hxq5fjB.png\"},{\"url\":\"https://artdevjs.imgur.com/all\",\"label\":\"imgur\",\"customScreenshotURL\":\"https://i.imgur.com/hMG9e10.jpg\",\"baseDomain\":\"artdevjs.imgur.com\"},{\"url\":\"https://filmix.co/favorites\",\"label\":\"filmix\",\"customScreenshotURL\":\"https://filmix.co/templates/Filmix/media/img/filmix.png\"},{\"url\":\"http://ex-fs.net/subnews/\",\"label\":\"ex-fs\",\"customScreenshotURL\":\"https://i.imgur.com/cEmz6Sr.png\"},{\"url\":\"https://myshows.me/profile/\",\"label\":\"myshows\",\"customScreenshotURL\":\"https://i.imgur.com/1RKrjKy.png\"}]");
 
 // set home page url
-user_pref("browser.startup.homepage", "https://www.google.com.ua/");
+user_pref("browser.startup.homepage", "https://duckduckgo.com/?key=291864b3d524962d791b3cf990c984fd65285de4d0fdb46be98fa5513c44430ace11193e7896ee611e1fb302e7ac74e5fb1391aacff656b711528ded5fb5370e");
 
 // disable web search input on new page
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
@@ -184,7 +200,7 @@ user_pref("browser.urlbar.maxRichResults", 15);
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
 
 // history-first search suggestions in the url bar
-user_pref("browser.urlbar.matchBuckets", "general:4,suggestion:infinity");
+user_pref("browser.urlbar.matchBuckets", "general:5,suggestion:infinity");
 
 // disable one-click search engines
 user_pref("browser.urlbar.oneOffSearches", false);
@@ -247,9 +263,6 @@ user_pref("browser.send_pings", false);
 // Only send pings if send and receiving host match (same website).
 user_pref("browser.send_pings.require_same_host", true);
 
-
-
-
 //
 // ─── EXTENSIONS ──────────────────────────────────────────────────────────────
 //
@@ -282,7 +295,7 @@ user_pref("permissions.desktop-notification.postPrompt.enabled", false);
 //
 
 // limit content processes load
-user_pref("dom.ipc.processCount", 4);
+// user_pref("dom.ipc.processCount", 4);
 
 // don’t load tabs until selected
 user_pref("browser.sessionstore.restore_on_demand", true);
@@ -290,6 +303,12 @@ user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
 
 // maximum number of recently visited pages to store in memory
 user_pref("browser.sessionhistory.max_total_viewers", 2);
+
+// the maximum memory to use to cache
+// user_pref("browser.cache.disk.enable", 51200);
+
+// the maximum memory to use to cache
+// user_pref("browser.cache.offline.capacity", false);
 
 // the maximum memory to use to cache
 user_pref("browser.cache.memory.max_entry_size", 4096);
@@ -302,6 +321,8 @@ user_pref("network.dns.disablePrefetch", true);
 
 // when to send the Referer header and set document.referrer
 // user_pref("network.http.sendRefererHeader", 0);
+
+user_pref("dom.indexedDB.enabled", true);
 
 /* DISABLE ANIMATIONS ─────────────────────────────────────────────────────── */
 
@@ -345,7 +366,8 @@ user_pref("devtools.toolsidebar-width.inspector", 350);
 user_pref("devtools.toolsidebar-width.inspector.splitsidebar", 350);
 
 // copy screenshots to the clipboard
-user_pref("devtools.screenshot.clipboard.enabled", true);
+// user_pref("devtools.screenshot.clipboard.enabled", true);
+user_pref("devtools.screenshot.audio.enabled", false);
 
 // inspector default color unit
 user_pref("devtools.defaultColorUnit", "hex");
@@ -356,6 +378,9 @@ user_pref("xpinstall.signatures.required", false);
 user_pref("app.normandy.first_run", false);
 user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("trailhead.firstrun.didSeeAboutWelcome", true);
+
+// hide what-new
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{\"id\":\"whats-new-panel\",\"enabled\":false,\"type\":\"remote-settings\",\"bucket\":\"whats-new-panel\",\"updateCycleInMs\":3600000}");
 
 // user_pref("devtools.chrome.enabled", true);
 // user_pref("devtools.debugger.remote-enabled", true);
