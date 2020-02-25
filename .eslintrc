@@ -17,13 +17,19 @@
   ],
   "rules": {
     "max-len": "warn",
-    "prettier/prettier": "error"
+    "prettier/prettier": "warn"
   },
   "overrides": [
     {
       "files": ["src/user.js"],
       "rules": {
-        "quotes": ["error", "double"]
+        // "quotes": ["error", "double"],
+        "max-len": "off",
+        "quotes": [
+          "error",
+          "double",
+          { "avoidEscape": true, "allowTemplateLiterals": false }
+        ]
       }
     }
   ]
