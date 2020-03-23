@@ -1,1 +1,0 @@
-location=="chrome://browser/content/browser.xul"&&eval("whereToOpenLink = " + whereToOpenLink.toString().replace(/"current"/g,'e.target.classList.contains("bookmark-item")&&e.target.getAttribute("scheme")!="javascript"&&gURLBar.value!=""?"tab":$&'))
