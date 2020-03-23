@@ -263,6 +263,9 @@ user_pref("browser.send_pings", false);
 // Only send pings if send and receiving host match (same website).
 user_pref("browser.send_pings.require_same_host", true);
 
+// enable DNS over HTTPS
+user_pref("network.trr.mode", 2);
+
 //
 // ─── EXTENSIONS ──────────────────────────────────────────────────────────────
 //
