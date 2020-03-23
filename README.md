@@ -82,9 +82,15 @@
 
 ## themes
 
+- [theme docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/theme#properties) - `manifest.json`
+
+- [Firefox Color](https://color.firefox.com) - Build Beautiful Firefox Themes
+
 - [muckSponge/MaterialFox](https://github.com/muckSponge/MaterialFox) - A Material Design-inspired userChrome.css theme for Firefox
 
 - [Quantum-Nox-Firefox-Dark-Full-Theme](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) - these usercontent and userchrome files will give a full themed dark color to Firefox Quantum, menus and dialogs included, as well as the scrollbars
+
+- [firefox-sweet-theme](https://github.com/EliverLara/firefox-sweet-theme) - A dark and modern theme for firefox with vibrant colors [![github][github-logo]](https://github.com/EliverLara/firefox-sweet-theme)
 
 - [overdodactyl/ShadowFox](https://github.com/overdodactyl/ShadowFox) - a universal dark theme for Firefox
 
@@ -200,6 +206,8 @@
 - [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/?src=github) - Enables the Google Chrome Store and Opera Addons Website for Firefox. Point and click to install Opera/Chrome extensions straight into firefox
 
 ### bookmarks
+
+- [Bookmarklets context menu](https://addons.mozilla.org/en-US/firefox/addon/bookmarklets-context-menu/) - Add a context menu item contains only bookmarklets from bookmarks. [![github][github-logo]](https://github.com/bookmarklets-context-menu)
 
 - [Bookmark Dupes](https://addons.mozilla.org/en-US/firefox/addon/bookmark-dupes/) - Display/Remove duplicate bookmarks, empty folders or descriptions
 
