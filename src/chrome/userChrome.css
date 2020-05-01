@@ -15,7 +15,7 @@ toolbarbutton#alltabs-button {
 }
 
 /* apply MaterialFox theme */
-@import "./css/materialfox/chrome/userChrome.css";
+/* @import "./css/materialfox/chrome/userChrome.css"; */
 
 /* tab close icon settings */
 @import "./css/customcssforfx/classic/css/tabs/tab_close_always_visible.css";
@@ -26,3 +26,4 @@ toolbarbutton#alltabs-button {
 /* @import "./css/customcssforfx/classic/css/generalui/bookmark_icons_colorized.css"; */
 /* @import "./css/customcssforfx/classic/css/locationbar/locationbar_adjustments.css"; */
 /* @import "./css/customcssforfx/classic/css/"; */
+  

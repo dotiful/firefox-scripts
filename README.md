@@ -119,8 +119,6 @@
 
 - [Surfingkeys](https://addons.mozilla.org/en-US/firefox/addon/surfingkeys_ff/?src=search) - Map your keys for web surfing, expand your browser with javascript and keyboard [![github][github-logo]](https://github.com/)
 
-- [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage [![github][github-logo]](https://github.com/Hau-Hau/firefox-tab-suspender)
-
 - [Tampermonkey](https://addons.mozilla.org/ru/firefox/addon/tampermonkey/) - Tampermonkey is the world's most popular userscript manager [![github][github-logo]](https://github.com/brookhong/Surfingkeys)
 
 - [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate/) - Quickly translate selected text on web page [![github][github-logo]](https://github.com/sienori/simple-translate)
@@ -160,7 +158,7 @@
     | Display position - Offset            | 20                                                                                       |
     | Font color of translation result     | ![color](https://via.placeholder.com/10/ffffff?text=+) `#ffffff`<br>`rgb(255, 255, 255)` |
     | Font color of translation candidates | ![color](https://via.placeholder.com/10/e3ded5?text=+) `#e3ded5`<br>`rgb(227, 222, 213)` |
-    | Background-color                     | ![color](https://via.placeholder.com/10/007997?text=+) `#007997`<br>`rgb(0, 121, 151)`   |
+    | Background-color                     | ![color](https://via.placeholder.com/10/333333?text=+) `#333333`<br>`rgb(51, 51, 51)`   |
 
     ### Preview
 
@@ -183,19 +181,21 @@
 
 ### dev
 
-- [CodeCopy](https://addons.mozilla.org/en-US/firefox/addon/codecopy/) - Because copy to clipboard buttons should exist on every code snippet.
+- [CodeCopy](https://addons.mozilla.org/en-US/firefox/addon/codecopy/) - Because copy to clipboard buttons should exist on every code snippet [![github][github-logo]](https://github.com/zenorocha/codecopy)
 
-- [Module Linker](https://addons.mozilla.org/en-US/firefox/addon/module-linker/) - Add direct links to imported modules on GitHub source code.
+- [Module Linker](https://addons.mozilla.org/en-US/firefox/addon/module-linker/) - Add direct links to imported modules on GitHub source code [![github][github-logo]](https://github.com/fiatjaf/module-linker)
 
-- [npm-hub](https://addons.mozilla.org/en-US/firefox/addon/npm-hub) - Explore npm dependencies on GitHub repos.
+- [npm-hub](https://addons.mozilla.org/en-US/firefox/addon/npm-hub) - Explore npm dependencies on GitHub repos [![github][github-logo]](https://github.com/npmhub/npmhub)
 
-- [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/) - Simplifies the GitHub interface and adds many useful features.
+- [Refined GitHub](https://addons.mozilla.org/en-US/firefox/addon/refined-github-/) - Simplifies the GitHub interface and adds many useful features [![github][github-logo]](https://github.com/sindresorhus/refined-github)
 
-- [Gitpod](https://addons.mozilla.org/en-US/firefox/addon/gitpod/) - One-Click Online IDE for GitHub.
+- [EnixCoda/Gitako](https://github.com/EnixCoda/Gitako) - File tree extension for GitHub [![github][github-logo]](https://github.com/EnixCoda/Gitako)
 
-- [JSON Lite](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files.
+- [Gitpod](https://addons.mozilla.org/en-US/firefox/addon/gitpod/) - One-Click Online IDE for GitHub [![github][github-logo]](https://github.com/gitpod-io/browser-extension)
 
-- [Console Recorder for AWS](https://addons.mozilla.org/en-US/firefox/addon/console-recorder/) - Records actions made in the AWS Management Console and outputs the equivalent CLI/SDK commands and CloudFormation/Terraform templates.
+- [JSON Lite](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files [![github][github-logo]](https://github.com/lauriro/json-lite)
+
+- [AWS Console Recorder](https://addons.mozilla.org/en-US/firefox/addon/console-recorder/) - Records actions made in the AWS Management Console and outputs the equivalent CLI/SDK commands and CloudFormation/Terraform templates [![github][github-logo]](https://github.com/iann0036/AWSConsoleRecorderGenerator)
 
 ### extension development
 
@@ -234,6 +234,8 @@
     | toolbar click action        | discard other tabs |
     ----
   </details>
+
+- [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage [![github][github-logo]](https://github.com/Hau-Hau/firefox-tab-suspender)
 
 - [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
 
