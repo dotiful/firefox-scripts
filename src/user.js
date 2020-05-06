@@ -48,6 +48,7 @@ user_pref("dom.disable_beforeunload", true);
 user_pref("extensions.screenshots.disabled", true);
 
 
+
 //
 // ─── BOOKMARKS ───────────────────────────────────────────────────────────────
 //
@@ -56,7 +57,7 @@ user_pref("extensions.screenshots.disabled", true);
 user_pref("browser.bookmarks.autoExportHTML", true);
 
 // define the number of bookmarks backups
-user_pref("browser.bookmarks.max_backups", 5);
+user_pref("browser.bookmarks.max_backups", 3);
 
 //
 // ─── BEHAVIOUR ───────────────────────────────────────────────────────────────
@@ -93,10 +94,17 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 // user_pref("browser.tabs.loadInBackground", true);
 // user_pref("browser.tabs.loadDivertedInBackground", true);
 
+// fix telegram links handler
+user_pref("network.protocol-handler.expose.tg", false);
+// user_pref("network.protocol-handler.expose.magnet", false);
+
 
 //
 // ─── UI ──────────────────────────────────────────────────────────────────────
 //
+
+// theme
+user_pref("extensions.activeThemeID", "firefox-compact-dark@mozilla.org");
 
 // tiny bars
 user_pref("browser.uidensity", 1);
@@ -123,9 +131,12 @@ user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);
 user_pref("mousewheel.with_meta.action", 1);
 
 // fix the dark theme bug
-user_pref("widget.content.gtk-theme-override", "Adwaita:light");
 user_pref("widget.content.allow-gtk-dark-theme", true);
+user_pref("widget.content.gtk-theme-override", "Adwaita:light");
 
+// fonts
+user_pref("font.name.monospace.x-western", "FiraCode Nerd Font Mono");
+user_pref("font.name.sans-serif.x-western", "SF Pro Display");
 
 /* READER MODE─────────────────────────────────────────────────────────────── */
 // enable dark theme
@@ -147,6 +158,8 @@ user_pref("browser.tabs.closeButtons", 1);
 // replicate chrome behaviour for clipped tabs
 user_pref("browser.tabs.tabClipWidth", 80);
 
+// backspace to go back
+user_pref("browser.backspace_action", 0);
 
 //
 // ─── HOME ────────────────────────────────────────────────────────────────────
@@ -159,7 +172,7 @@ user_pref("browser.startup.page", 3);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 4);
 
 // pinned sites top sites
-user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://github.com/\",\"label\":\"github\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gist.github.com/dotiful?direction=deschttps://gist.github.com/dotiful?direction=desc&sort=updated\",\"label\":\"gists\",\"baseDomain\":\"gist.github.com\"},{\"url\":\"https://github.com/dotiful?tab=stars\",\"label\":\"stars\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gitlab.com/?nav_source=navbar\",\"label\":\"gitlab\",\"customScreenshotURL\":\"https://i.imgur.com/AGSiONj.png\",\"baseDomain\":\"gitlab.com\"},{\"url\":\"https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId\",\"label\":\"aws\",\"customScreenshotURL\":\"https://i.imgur.com/irpKuOG.png\",\"baseDomain\":\"eu-central-1.console.aws.amazon.com\"},{\"url\":\"https://console.cloud.google.com/home/dashboard?authuser=2&project=wrtdev\",\"label\":\"GCP\",\"customScreenshotURL\":\"https://i.imgur.com/XUwMPRs.png\",\"baseDomain\":\"console.cloud.google.com\"},{\"url\":\"https://dash.cloudflare.com\",\"label\":\"cloudflare\",\"customScreenshotURL\":\"https://i.imgur.com/2dddPbm.png\",\"baseDomain\":\"dash.cloudflare.com\"},{\"url\":\"https://adwrt.cf/\",\"label\":\"adhome\",\"customScreenshotURL\":\"https://i.imgur.com/dgvkfMl.png\",\"baseDomain\":\"adwrt.cf\"},{\"url\":\"https://www.google.com.ua/\",\"label\":\"google\",\"customScreenshotURL\":\"https://i.imgur.com/rT7EyzQ.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://mail.google.com/mail/u/0/\",\"label\":\"artdev\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/1/\",\"label\":\"dots\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/2/\",\"label\":\"wrt\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://www.youtube.com/\",\"label\":\"youtube\",\"customScreenshotURL\":\"https://i.imgur.com/W5nyO7W.png\",\"baseDomain\":\"youtube.com\"},{\"url\":\"https://drive.google.com/\",\"label\":\"drive\",\"customScreenshotURL\":\"https://i.imgur.com/41EIr4Q.png\",\"baseDomain\":\"drive.google.com\"},{\"url\":\"https://translate.google.com.ua/#view=home&op=translate&sl=auto&tl=ru\",\"label\":\"translate\",\"customScreenshotURL\":\"https://i.imgur.com/iiTj8hF.png\",\"baseDomain\":\"translate.google.com.ua\"},{\"url\":\"https://www.google.com.ua/maps\",\"label\":\"maps\",\"customScreenshotURL\":\"https://i.imgur.com/FSx9cpO.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://web.telegram.org/\",\"label\":\"telegram\",\"customScreenshotURL\":\"https://i.imgur.com/VijQNyZ.png\",\"baseDomain\":\"web.telegram.org\"},{\"url\":\"https://www.inoreader.com/\",\"label\":\"inoreader\",\"customScreenshotURL\":\"https://i.imgur.com/9qiR748.png\",\"baseDomain\":\"inoreader.com\"},{\"url\":\"https://www.integromat.com/\",\"label\":\"integromat\",\"customScreenshotURL\":\"https://i.imgur.com/6FEgChu.png\",\"baseDomain\":\"integromat.com\"},{\"url\":\"https://twitter.com/artdevjs/lists/feed\",\"label\":\"twitter\",\"customScreenshotURL\":\"https://i.imgur.com/sfAkrOp.png\",\"baseDomain\":\"twitter.com\"},{\"url\":\"https://www.reddit.com/user/artdevjs/m/favs/new/\",\"label\":\"reddit\",\"customScreenshotURL\":\"https://i.imgur.com/HV6Ur0m.png\",\"baseDomain\":\"reddit.com\"},{\"url\":\"https://www.dropbox.com/home\",\"label\":\"dropbox\",\"customScreenshotURL\":\"https://i.imgur.com/AXrk2CR.png\",\"baseDomain\":\"dropbox.com\"},{\"url\":\"https://bitbucket.org/dashboard/overview\",\"label\":\"bitbucket\",\"customScreenshotURL\":\"https://i.imgur.com/F6sEfIW.png\",\"baseDomain\":\"bitbucket.org\"},{\"url\":\"https://www.npmjs.com\",\"label\":\"npm\",\"customScreenshotURL\":\"https://i.imgur.com/g3ZPxyk.png\",\"baseDomain\":\"npmjs.com\"},{\"url\":\"https://outlook.live.com/mail/inbox\",\"label\":\"outlook\",\"customScreenshotURL\":\"https://i.imgur.com/tK0xCo0.png\",\"baseDomain\":\"outlook.live.com\"},{\"url\":\"https://my.1password.com/home\",\"label\":\"1password\",\"customScreenshotURL\":\"https://i.imgur.com/PHOaimF.png\",\"baseDomain\":\"my.1password.com\"},{\"url\":\"https://www.olx.ua/myaccount/\",\"label\":\"olx\",\"customScreenshotURL\":\"https://i.imgur.com/hxq5fjB.png\"},{\"url\":\"https://artdevjs.imgur.com/all\",\"label\":\"imgur\",\"customScreenshotURL\":\"https://i.imgur.com/hMG9e10.jpg\",\"baseDomain\":\"artdevjs.imgur.com\"},{\"url\":\"https://filmix.co/favorites\",\"label\":\"filmix\",\"customScreenshotURL\":\"https://filmix.co/templates/Filmix/media/img/filmix.png\"},{\"url\":\"http://ex-fs.net/subnews/\",\"label\":\"ex-fs\",\"customScreenshotURL\":\"https://i.imgur.com/cEmz6Sr.png\"},{\"url\":\"https://myshows.me/profile/\",\"label\":\"myshows\",\"customScreenshotURL\":\"https://i.imgur.com/1RKrjKy.png\"}]");
+user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://github.com/\",\"label\":\"github\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gist.github.com/dotiful?direction=deschttps://gist.github.com/dotiful?direction=desc&sort=updated\",\"label\":\"gists\",\"baseDomain\":\"gist.github.com\"},{\"url\":\"https://github.com/dotiful?tab=stars\",\"label\":\"stars\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gitlab.com/?nav_source=navbar\",\"label\":\"gitlab\",\"customScreenshotURL\":\"https://i.imgur.com/AGSiONj.png\",\"baseDomain\":\"gitlab.com\"},{\"url\":\"https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId\",\"label\":\"aws\",\"customScreenshotURL\":\"https://i.imgur.com/irpKuOG.png\",\"baseDomain\":\"eu-central-1.console.aws.amazon.com\"},{\"url\":\"https://console.cloud.google.com/home/dashboard?authuser=2&project=wrtdev\",\"label\":\"GCP\",\"customScreenshotURL\":\"https://i.imgur.com/XUwMPRs.png\",\"baseDomain\":\"console.cloud.google.com\"},{\"url\":\"https://dash.cloudflare.com\",\"label\":\"cloudflare\",\"customScreenshotURL\":\"https://i.imgur.com/2dddPbm.png\",\"baseDomain\":\"dash.cloudflare.com\"},{\"url\":\"https://adwrt.cf/\",\"label\":\"adhome\",\"customScreenshotURL\":\"https://i.imgur.com/dgvkfMl.png\",\"baseDomain\":\"adwrt.cf\"},{\"url\":\"https://www.google.com.ua/\",\"label\":\"google\",\"customScreenshotURL\":\"https://i.imgur.com/rT7EyzQ.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://mail.google.com/mail/u/0/\",\"label\":\"artdev\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/1/\",\"label\":\"dots\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/2/\",\"label\":\"wrt\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://www.youtube.com/\",\"label\":\"youtube\",\"customScreenshotURL\":\"https://i.imgur.com/W5nyO7W.png\",\"baseDomain\":\"youtube.com\"},{\"url\":\"https://drive.google.com/\",\"label\":\"drive\",\"customScreenshotURL\":\"https://i.imgur.com/41EIr4Q.png\",\"baseDomain\":\"drive.google.com\"},{\"url\":\"https://translate.google.com.ua/#view=home&op=translate&sl=auto&tl=ru\",\"label\":\"translate\",\"customScreenshotURL\":\"https://i.imgur.com/iiTj8hF.png\",\"baseDomain\":\"translate.google.com.ua\"},{\"url\":\"https://www.google.com.ua/maps\",\"label\":\"maps\",\"customScreenshotURL\":\"https://i.imgur.com/FSx9cpO.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://web.telegram.org/\",\"label\":\"telegram\",\"customScreenshotURL\":\"https://i.imgur.com/VijQNyZ.png\",\"baseDomain\":\"web.telegram.org\"},{\"url\":\"https://www.inoreader.com/\",\"label\":\"inoreader\",\"customScreenshotURL\":\"https://i.imgur.com/9qiR748.png\",\"baseDomain\":\"inoreader.com\"},{\"url\":\"https://www.integromat.com/\",\"label\":\"integromat\",\"customScreenshotURL\":\"https://i.imgur.com/6FEgChu.png\",\"baseDomain\":\"integromat.com\"},{\"url\":\"https://twitter.com/artdevjs/lists/feed\",\"label\":\"twitter\",\"customScreenshotURL\":\"https://i.imgur.com/sfAkrOp.png\",\"baseDomain\":\"twitter.com\"},{\"url\":\"https://www.reddit.com/user/artdevjs/m/favs/new/\",\"label\":\"reddit\",\"customScreenshotURL\":\"https://i.imgur.com/HV6Ur0m.png\",\"baseDomain\":\"reddit.com\"},{\"url\":\"https://www.dropbox.com/home\",\"label\":\"dropbox\",\"customScreenshotURL\":\"https://i.imgur.com/AXrk2CR.png\",\"baseDomain\":\"dropbox.com\"},{\"url\":\"https://bitbucket.org/dashboard/overview\",\"label\":\"bitbucket\",\"customScreenshotURL\":\"https://i.imgur.com/F6sEfIW.png\",\"baseDomain\":\"bitbucket.org\"},{\"url\":\"https://www.npmjs.com\",\"label\":\"npm\",\"customScreenshotURL\":\"https://i.imgur.com/g3ZPxyk.png\",\"baseDomain\":\"npmjs.com\"},{\"url\":\"https://outlook.live.com/mail/inbox\",\"label\":\"outlook\",\"customScreenshotURL\":\"https://i.imgur.com/tK0xCo0.png\",\"baseDomain\":\"outlook.live.com\"},{\"url\":\"https://my.1password.com/home\",\"label\":\"1password\",\"customScreenshotURL\":\"https://i.imgur.com/PHOaimF.png\",\"baseDomain\":\"my.1password.com\"},{\"url\":\"https://www.olx.ua/myaccount/\",\"label\":\"olx\",\"customScreenshotURL\":\"https://i.imgur.com/cozJJwJ.png\",\"baseDomain\":\"olx.ua\"},{\"url\":\"https://artdevjs.imgur.com/all\",\"label\":\"imgur\",\"customScreenshotURL\":\"https://i.imgur.com/hMG9e10.jpg\",\"baseDomain\":\"artdevjs.imgur.com\"},{\"url\":\"https://filmix.co/favorites\",\"label\":\"filmix\",\"customScreenshotURL\":\"https://filmix.co/templates/Filmix/media/img/filmix.png\",\"baseDomain\":\"filmix.co\"},{\"url\":\"http://ex-fs.net/subnews/\",\"label\":\"ex-fs\",\"customScreenshotURL\":\"https://i.imgur.com/cEmz6Sr.png\",\"baseDomain\":\"ex-fs.net\"},{\"url\":\"https://myshows.me/profile/\",\"label\":\"myshows\",\"customScreenshotURL\":\"https://i.imgur.com/1RKrjKy.png\",\"baseDomain\":\"myshows.me\"},{\"url\":\"https://www.privat24.ua/\",\"label\":\"privat24\",\"customScreenshotURL\":\"https://i.imgur.com/bTdQFwM.png\"}]");
 
 // set home page url
 user_pref("browser.startup.homepage", "https://duckduckgo.com/?key=291864b3d524962d791b3cf990c984fd65285de4d0fdb46be98fa5513c44430ace11193e7896ee611e1fb302e7ac74e5fb1391aacff656b711528ded5fb5370e");
@@ -251,6 +264,9 @@ user_pref("media.peerconnection.enabled", false);
 // block browser tracking
 user_pref("privacy.donottrackheader.enabled", true);
 
+// allow search sugggestions in private windows
+user_pref("browser.search.suggest.enabled.private", true);
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Disables geolocation and firefox logging geolocation requests.
 user_pref("geo.enabled", false);
@@ -262,9 +278,6 @@ user_pref("browser.send_pings", false);
 
 // Only send pings if send and receiving host match (same website).
 user_pref("browser.send_pings.require_same_host", true);
-
-// enable DNS over HTTPS
-user_pref("network.trr.mode", 2);
 
 //
 // ─── EXTENSIONS ──────────────────────────────────────────────────────────────
