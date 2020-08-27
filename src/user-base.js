@@ -26,7 +26,7 @@ user_pref("browser.download.hide_plugins_without_extensions", false);
 
 // save files with unknown mime type
 // eslint-disable-next-line prettier/prettier
-user_pref("browser.helperApps.neverAsk.saveToDisk", "application/msword, application/csv, application/ris, text/csv, image/png, image/svg+xml, application/pdf, text/html, text/plain, application/zip, application/x-zip, application/x-zip-compressed, application/download, application/octet-stream");
+// user_pref("browser.helperApps.neverAsk.saveToDisk", "application/msword, application/csv, application/ris, text/csv, image/png, image/svg+xml, application/pdf, text/html, text/plain, application/zip, application/x-zip, application/x-zip-compressed, application/download, application/octet-stream");
 
 // disable auto install updates
 user_pref("app.update.auto", false);
@@ -38,10 +38,10 @@ user_pref("app.update.service.enabled", false);
 user_pref("browser.search.update", false);
 
 // customize items in toolbar
-user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"customizableui-special-spring1\",\"sync-button\",\"urlbar-container\",\"customizableui-special-spring2\",\"downloads-button\",\"library-button\",\"sidebar-button\",\"_89299b16-7b8d-48c2-8bdf-e9e4f58de3f6_-browser-action\",\"onepassword4_agilebits_com-browser-action\",\"uc-restart\",\"restart-button\",\"firefox_tampermonkey_net-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\",\"_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action\",\"adguardadblocker_adguard_com-browser-action\",\"chrome-store-foxified_jetpack-browser-action\",\"_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action\",\"_a8332c60-5b6d-41ee-bfc8-e9bb331d34ad_-browser-action\",\"simple-translate_sienori-browser-action\",\"tab-session-manager_sienori-browser-action\",\"addon_darkreader_org-browser-action\",\"firefoxbeta_tampermonkey_net-browser-action\",\"fxa-toolbar-menu-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action\",\"_a8332c60-5b6d-41ee-bfc8-e9bb331d34ad_-browser-action\",\"simple-translate_sienori-browser-action\",\"firefoxbeta_tampermonkey_net-browser-action\",\"onepassword4_agilebits_com-browser-action\",\"_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\",\"webide-button\",\"adguardadblocker_adguard_com-browser-action\",\"addon_darkreader_org-browser-action\",\"firefox_tampermonkey_net-browser-action\",\"uc-restart\",\"chrome-store-foxified_jetpack-browser-action\",\"_89299b16-7b8d-48c2-8bdf-e9e4f58de3f6_-browser-action\",\"restart-button\",\"tab-session-manager_sienori-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":16,\"newElementCount\":19}");
+// user_pref("browser.uiCustomization.state", "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"stop-reload-button\",\"home-button\",\"customizableui-special-spring1\",\"sync-button\",\"urlbar-container\",\"customizableui-special-spring2\",\"downloads-button\",\"library-button\",\"sidebar-button\",\"_89299b16-7b8d-48c2-8bdf-e9e4f58de3f6_-browser-action\",\"onepassword4_agilebits_com-browser-action\",\"uc-restart\",\"restart-button\",\"firefox_tampermonkey_net-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\",\"_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action\",\"adguardadblocker_adguard_com-browser-action\",\"chrome-store-foxified_jetpack-browser-action\",\"_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action\",\"_a8332c60-5b6d-41ee-bfc8-e9bb331d34ad_-browser-action\",\"simple-translate_sienori-browser-action\",\"tab-session-manager_sienori-browser-action\",\"addon_darkreader_org-browser-action\",\"firefoxbeta_tampermonkey_net-browser-action\",\"fxa-toolbar-menu-button\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"PersonalToolbar\":[\"personal-bookmarks\"]},\"seen\":[\"developer-button\",\"_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-browser-action\",\"_a8332c60-5b6d-41ee-bfc8-e9bb331d34ad_-browser-action\",\"simple-translate_sienori-browser-action\",\"firefoxbeta_tampermonkey_net-browser-action\",\"onepassword4_agilebits_com-browser-action\",\"_d634138d-c276-4fc8-924b-40a0ea21d284_-browser-action\",\"_7a7a4a92-a2a0-41d1-9fd7-1e92480d612d_-browser-action\",\"webide-button\",\"adguardadblocker_adguard_com-browser-action\",\"addon_darkreader_org-browser-action\",\"firefox_tampermonkey_net-browser-action\",\"uc-restart\",\"chrome-store-foxified_jetpack-browser-action\",\"_89299b16-7b8d-48c2-8bdf-e9e4f58de3f6_-browser-action\",\"restart-button\",\"tab-session-manager_sienori-browser-action\"],\"dirtyAreaCache\":[\"nav-bar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":16,\"newElementCount\":19}");
 
 // disable beforeunload events (e.g. “Are you sure you want to leave this page?”
-user_pref("dom.disable_beforeunload", true);
+// user_pref("dom.disable_beforeunload", true);
 
 // disable screenshots
 // eslint-disable-next-line prettier/prettier
@@ -54,10 +54,10 @@ user_pref("extensions.screenshots.disabled", true);
 //
 
 // save bookmarks.html to the profile on browser exit.
-user_pref("browser.bookmarks.autoExportHTML", true);
+// user_pref("browser.bookmarks.autoExportHTML", true);
 
 // define the number of bookmarks backups
-user_pref("browser.bookmarks.max_backups", 3);
+// user_pref("browser.bookmarks.max_backups", 3);
 
 //
 // ─── BEHAVIOUR ───────────────────────────────────────────────────────────────
@@ -95,7 +95,7 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 // user_pref("browser.tabs.loadDivertedInBackground", true);
 
 // fix telegram links handler
-user_pref("network.protocol-handler.expose.tg", false);
+// user_pref("network.protocol-handler.expose.tg", false);
 // user_pref("network.protocol-handler.expose.magnet", false);
 
 
@@ -136,8 +136,8 @@ user_pref("widget.content.allow-gtk-dark-theme", true);
 user_pref("widget.content.gtk-theme-override", "Adwaita:light");
 
 // fonts
-user_pref("font.name.monospace.x-western", "FiraCode Nerd Font Mono");
-user_pref("font.name.sans-serif.x-western", "SF Pro Display");
+// user_pref("font.name.monospace.x-western", "FiraCode Nerd Font Mono");
+// user_pref("font.name.sans-serif.x-western", "SF Pro Display");
 
 /* READER MODE─────────────────────────────────────────────────────────────── */
 // enable dark theme
@@ -157,7 +157,7 @@ user_pref("browser.tabs.showAudioPlayingIcon", true);
 user_pref("browser.tabs.closeButtons", 1);
 
 // replicate chrome behaviour for clipped tabs
-user_pref("browser.tabs.tabClipWidth", 80);
+// user_pref("browser.tabs.tabClipWidth", 80);
 
 // backspace to go back
 user_pref("browser.backspace_action", 0);
@@ -176,7 +176,7 @@ user_pref("browser.newtabpage.activity-stream.topSitesRows", 4);
 user_pref("browser.newtabpage.pinned", "[{\"url\":\"https://github.com/\",\"label\":\"github\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gist.github.com/dotiful?direction=deschttps://gist.github.com/dotiful?direction=desc&sort=updated\",\"label\":\"gists\",\"baseDomain\":\"gist.github.com\"},{\"url\":\"https://github.com/dotiful?tab=stars\",\"label\":\"stars\",\"baseDomain\":\"github.com\"},{\"url\":\"https://gitlab.com/?nav_source=navbar\",\"label\":\"gitlab\",\"customScreenshotURL\":\"https://i.imgur.com/AGSiONj.png\",\"baseDomain\":\"gitlab.com\"},{\"url\":\"https://eu-central-1.console.aws.amazon.com/ec2/v2/home?region=eu-central-1#Instances:sort=instanceId\",\"label\":\"aws\",\"customScreenshotURL\":\"https://i.imgur.com/irpKuOG.png\",\"baseDomain\":\"eu-central-1.console.aws.amazon.com\"},{\"url\":\"https://console.cloud.google.com/home/dashboard?authuser=2&project=wrtdev\",\"label\":\"GCP\",\"customScreenshotURL\":\"https://i.imgur.com/XUwMPRs.png\",\"baseDomain\":\"console.cloud.google.com\"},{\"url\":\"https://dash.cloudflare.com\",\"label\":\"cloudflare\",\"customScreenshotURL\":\"https://i.imgur.com/2dddPbm.png\",\"baseDomain\":\"dash.cloudflare.com\"},{\"url\":\"https://adwrt.cf/\",\"label\":\"adhome\",\"customScreenshotURL\":\"https://i.imgur.com/dgvkfMl.png\",\"baseDomain\":\"adwrt.cf\"},{\"url\":\"https://www.google.com.ua/\",\"label\":\"google\",\"customScreenshotURL\":\"https://i.imgur.com/rT7EyzQ.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://mail.google.com/mail/u/0/\",\"label\":\"artdev\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/1/\",\"label\":\"dots\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://mail.google.com/mail/u/2/\",\"label\":\"wrt\",\"customScreenshotURL\":\"https://i.imgur.com/2PwPKoS.png\",\"baseDomain\":\"mail.google.com\"},{\"url\":\"https://www.youtube.com/\",\"label\":\"youtube\",\"customScreenshotURL\":\"https://i.imgur.com/W5nyO7W.png\",\"baseDomain\":\"youtube.com\"},{\"url\":\"https://drive.google.com/\",\"label\":\"drive\",\"customScreenshotURL\":\"https://i.imgur.com/41EIr4Q.png\",\"baseDomain\":\"drive.google.com\"},{\"url\":\"https://translate.google.com.ua/#view=home&op=translate&sl=auto&tl=ru\",\"label\":\"translate\",\"customScreenshotURL\":\"https://i.imgur.com/iiTj8hF.png\",\"baseDomain\":\"translate.google.com.ua\"},{\"url\":\"https://www.google.com.ua/maps\",\"label\":\"maps\",\"customScreenshotURL\":\"https://i.imgur.com/FSx9cpO.png\",\"baseDomain\":\"google.com.ua\"},{\"url\":\"https://web.telegram.org/\",\"label\":\"telegram\",\"customScreenshotURL\":\"https://i.imgur.com/VijQNyZ.png\",\"baseDomain\":\"web.telegram.org\"},{\"url\":\"https://www.inoreader.com/\",\"label\":\"inoreader\",\"customScreenshotURL\":\"https://i.imgur.com/9qiR748.png\",\"baseDomain\":\"inoreader.com\"},{\"url\":\"https://www.integromat.com/\",\"label\":\"integromat\",\"customScreenshotURL\":\"https://i.imgur.com/6FEgChu.png\",\"baseDomain\":\"integromat.com\"},{\"url\":\"https://twitter.com/artdevjs/lists/feed\",\"label\":\"twitter\",\"customScreenshotURL\":\"https://i.imgur.com/sfAkrOp.png\",\"baseDomain\":\"twitter.com\"},{\"url\":\"https://www.reddit.com/user/artdevjs/m/favs/new/\",\"label\":\"reddit\",\"customScreenshotURL\":\"https://i.imgur.com/HV6Ur0m.png\",\"baseDomain\":\"reddit.com\"},{\"url\":\"https://www.dropbox.com/home\",\"label\":\"dropbox\",\"customScreenshotURL\":\"https://i.imgur.com/AXrk2CR.png\",\"baseDomain\":\"dropbox.com\"},{\"url\":\"https://bitbucket.org/dashboard/overview\",\"label\":\"bitbucket\",\"customScreenshotURL\":\"https://i.imgur.com/F6sEfIW.png\",\"baseDomain\":\"bitbucket.org\"},{\"url\":\"https://www.npmjs.com\",\"label\":\"npm\",\"customScreenshotURL\":\"https://i.imgur.com/g3ZPxyk.png\",\"baseDomain\":\"npmjs.com\"},{\"url\":\"https://outlook.live.com/mail/inbox\",\"label\":\"outlook\",\"customScreenshotURL\":\"https://i.imgur.com/tK0xCo0.png\",\"baseDomain\":\"outlook.live.com\"},{\"url\":\"https://my.1password.com/home\",\"label\":\"1password\",\"customScreenshotURL\":\"https://i.imgur.com/PHOaimF.png\",\"baseDomain\":\"my.1password.com\"},{\"url\":\"https://www.olx.ua/myaccount/\",\"label\":\"olx\",\"customScreenshotURL\":\"https://i.imgur.com/cozJJwJ.png\",\"baseDomain\":\"olx.ua\"},{\"url\":\"https://artdevjs.imgur.com/all\",\"label\":\"imgur\",\"customScreenshotURL\":\"https://i.imgur.com/hMG9e10.jpg\",\"baseDomain\":\"artdevjs.imgur.com\"},{\"url\":\"https://filmix.co/favorites\",\"label\":\"filmix\",\"customScreenshotURL\":\"https://filmix.co/templates/Filmix/media/img/filmix.png\",\"baseDomain\":\"filmix.co\"},{\"url\":\"http://ex-fs.net/subnews/\",\"label\":\"ex-fs\",\"customScreenshotURL\":\"https://i.imgur.com/cEmz6Sr.png\",\"baseDomain\":\"ex-fs.net\"},{\"url\":\"https://myshows.me/profile/\",\"label\":\"myshows\",\"customScreenshotURL\":\"https://i.imgur.com/1RKrjKy.png\",\"baseDomain\":\"myshows.me\"},{\"url\":\"https://next.privat24.ua/\",\"label\":\"privat24\",\"customScreenshotURL\":\"https://i.imgur.com/bTdQFwM.png\"}]");
 
 // set home page url
-user_pref("browser.startup.homepage", "https://duckduckgo.com/?key=291864b3d524962d791b3cf990c984fd65285de4d0fdb46be98fa5513c44430ace11193e7896ee611e1fb302e7ac74e5fb1391aacff656b711528ded5fb5370e");
+// user_pref("browser.startup.homepage", "https://duckduckgo.com/?key=291864b3d524962d791b3cf990c984fd65285de4d0fdb46be98fa5513c44430ace11193e7896ee611e1fb302e7ac74e5fb1391aacff656b711528ded5fb5370e");
 
 // disable web search input on new page
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
@@ -208,10 +208,16 @@ user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 // user_pref("browser.urlbar.autoFill", false);
 
 // number of entries that can appear in the location bar
-user_pref("browser.urlbar.maxRichResults", 15);
+// user_pref("browser.urlbar.maxRichResults", 15);
 
 // decode copied urls instead of encode
-user_pref("browser.urlbar.decodeURLsOnCopy", true);
+// user_pref("browser.urlbar.decodeURLsOnCopy", true);
+
+// address bar suggestions
+user_pref("browser.urlbar.suggest.topsites", false);
+// user_pref("browser.urlbar.suggest.bookmark", false);
+// user_pref("browser.urlbar.suggest.history", false);
+// user_pref("browser.urlbar.suggest.searches", false);
 
 // history-first search suggestions in the url bar
 // user_pref("browser.urlbar.matchBuckets", "general:5,suggestion:infinity");
@@ -220,7 +226,7 @@ user_pref("browser.urlbar.decodeURLsOnCopy", true);
 user_pref("browser.urlbar.oneOffSearches", false);
 
 // speeds up the search response
-user_pref("browser.urlbar.delay", 0);
+// user_pref("browser.urlbar.delay", 0);
 
 // search google for "highlighted text" open in a background tab
 user_pref("browser.search.context.loadInBackground", true);
@@ -228,6 +234,7 @@ user_pref("browser.search.context.loadInBackground", true);
 // nicer view for searching strings on a page
 user_pref("findbar.highlightAll", true);
 user_pref("findbar.modalHighlight", true);
+
 
 
 //
@@ -285,12 +292,12 @@ user_pref("browser.send_pings.require_same_host", true);
 //
 
 // disable new html add-ons manager
-user_pref("extensions.htmlaboutaddons.enabled", false);
+// user_pref("extensions.htmlaboutaddons.enabled", false);
 // inline options browser for html add-ons manager details
-user_pref("extensions.htmlaboutaddons.inline-options.enabled", false);
+// user_pref("extensions.htmlaboutaddons.inline-options.enabled", false);
 
-user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
-user_pref("extensions.htmlaboutaddons.discover.enabled", false);
+// user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+// user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 
 // disable add-on abuse reporting
 user_pref("extensions.abuseReport.enabled", false);
@@ -319,7 +326,7 @@ user_pref("browser.sessionstore.restore_on_demand", true);
 user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
 
 // maximum number of recently visited pages to store in memory
-user_pref("browser.sessionhistory.max_total_viewers", 2);
+// user_pref("browser.sessionhistory.max_total_viewers", 2);
 
 // the maximum memory to use to cache
 // user_pref("browser.cache.disk.enable", 51200);
@@ -328,13 +335,13 @@ user_pref("browser.sessionhistory.max_total_viewers", 2);
 // user_pref("browser.cache.offline.capacity", false);
 
 // the maximum memory to use to cache
-user_pref("browser.cache.memory.max_entry_size", 4096);
+// user_pref("browser.cache.memory.max_entry_size", 4096);
 
 // number of milliseconds between session saving operations
-user_pref("browser.sessionstore.interval", 100000);
+// user_pref("browser.sessionstore.interval", 100000);
 
 // enable dns prefetching
-user_pref("network.dns.disablePrefetch", true);
+// user_pref("network.dns.disablePrefetch", true);
 
 // when to send the Referer header and set document.referrer
 // user_pref("network.http.sendRefererHeader", 0);
@@ -370,7 +377,7 @@ user_pref("devtools.theme", "dark");
 user_pref("devtools.selfxss.count", 100);
 
 // enable dom property viewer
-user_pref("devtools.dom.enabled", true);
+// user_pref("devtools.dom.enabled", true);
 
 // devtools tabs order
 user_pref("devtools.toolbox.tabsOrder", "inspector,webconsole,netmonitor,styleeditor,dom,jsdebugger,performance,memory,storage,accessibility");
@@ -379,17 +386,17 @@ user_pref("devtools.inspector.three-pane-enabled", false);
 user_pref("devtools.inspector.activeSidebar", "ruleview");
 
 
-user_pref("devtools.toolbox.footer.height", 359);
-user_pref("devtools.toolsidebar-height.inspector", 350);
-user_pref("devtools.toolsidebar-width.inspector", 350);
-user_pref("devtools.toolsidebar-width.inspector.splitsidebar", 350);
+// user_pref("devtools.toolbox.footer.height", 359);
+// user_pref("devtools.toolsidebar-height.inspector", 350);
+// user_pref("devtools.toolsidebar-width.inspector", 350);
+// user_pref("devtools.toolsidebar-width.inspector.splitsidebar", 350);
 
 // copy screenshots to the clipboard
 // user_pref("devtools.screenshot.clipboard.enabled", true);
 user_pref("devtools.screenshot.audio.enabled", false);
 
 // inspector default color unit
-user_pref("devtools.defaultColorUnit", "hex");
+// user_pref("devtools.defaultColorUnit", "hex");
 
 // disable addons signing
 user_pref("xpinstall.signatures.required", false);
@@ -401,16 +408,16 @@ user_pref("trailhead.firstrun.didSeeAboutWelcome", true);
 // hide what-new
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{\"id\":\"whats-new-panel\",\"enabled\":false,\"type\":\"remote-settings\",\"bucket\":\"whats-new-panel\",\"updateCycleInMs\":3600000}");
 
-// user_pref("devtools.chrome.enabled", true);
-// user_pref("devtools.debugger.remote-enabled", true);
-// user_pref("devtools.debugger.prompt-connection", false);
+// enabling the browser toolbox
+user_pref("devtools.chrome.enabled", true);
+user_pref("devtools.debugger.remote-enabled", true);
+user_pref("devtools.debugger.prompt-connection", false);
 
 // ─────────────────────────────────────────────────────────────────────────────
 
 // user_pref("browser.fixup.alternate.enabled", false);
-// user_pref("browser.urlbar.suggest.bookmark", false);
-// user_pref("browser.urlbar.suggest.history", false);
-// user_pref("browser.urlbar.suggest.searches", false);
+
+
 // user_pref("browser.urlbar.autocomplete.enabled", false);
 // user_pref("browser.urlbar.unifiedcomplete", false);
 
