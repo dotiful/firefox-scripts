@@ -4,6 +4,3 @@
 [submodule "src/chrome/scripts/userChrome"]
 	path = src/chrome/scripts/userChrome
 	url = https://github.com/Endor8/userChrome.js
-[submodule "src/chrome/css/materialfox"]
-	path = src/chrome/css/materialfox
-	url = https://github.com/muckSponge/MaterialFox
