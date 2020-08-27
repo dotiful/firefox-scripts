@@ -1,5 +1,6 @@
 {
 	"user_pref" : {
+    "scope": "javascript,typescript",
 		"prefix" : "up",
 		"body" : [
 			"$LINE_COMMENT $3",

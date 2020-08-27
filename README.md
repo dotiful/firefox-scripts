@@ -14,9 +14,11 @@
     * [general](#general)
     * [ui](#ui)
     * [dev](#dev)
+    * [privacy & security](#privacy--security)
     * [extension development](#extension-development)
     * [bookmarks](#bookmarks)
     * [tabs](#tabs)
+    * [search engines](#search-engines)
     * [rss](#rss)
     * [other](#other)
 
@@ -156,7 +158,7 @@
     | Display position - Reference point   | Clicked Point                                                                            |
     | Display position - Direction         | Bottom                                                                                   |
     | Display position - Offset            | 20                                                                                       |
-    | Font color of translation result     | ![color](https://via.placeholder.com/10/ffffff?text=+) `#ffffff`<br>`rgb(255, 255, 255)` |
+    | Font color of translation result     | ![color](https://via.placeholder.com/10/bdbdbd?text=+) `#bdbdbd`<br>`rgb(189, 189, 189)` |
     | Font color of translation candidates | ![color](https://via.placeholder.com/10/e3ded5?text=+) `#e3ded5`<br>`rgb(227, 222, 213)` |
     | Background-color                     | ![color](https://via.placeholder.com/10/333333?text=+) `#333333`<br>`rgb(51, 51, 51)`   |
 
@@ -167,9 +169,8 @@
     ----
   </details>
 
-- [1Password X](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/?src=collection) - The best way to experience 1Password in your browser
-
 - [Adguard AdBlocker](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/?src=search) - Unmatched adblock extension against advertising and pop-ups [![github][github-logo]](https://github.com/AdguardTeam/AdguardBrowserExtension)
+
 
 ### ui
 
@@ -193,9 +194,29 @@
 
 - [Gitpod](https://addons.mozilla.org/en-US/firefox/addon/gitpod/) - One-Click Online IDE for GitHub [![github][github-logo]](https://github.com/gitpod-io/browser-extension)
 
+- [github-vscode-icons](https://addons.mozilla.org/en-US/firefox/addon/github-vscode-icons/) - vscode-icons for github [![github][github-logo]](https://github.com/dderevjanik/github-vscode-icons)
+
 - [JSON Lite](https://addons.mozilla.org/en-US/firefox/addon/json-lite/) - Fast JSON viewer - highlights, shows items count/size, handles large files [![github][github-logo]](https://github.com/lauriro/json-lite)
 
 - [AWS Console Recorder](https://addons.mozilla.org/en-US/firefox/addon/console-recorder/) - Records actions made in the AWS Management Console and outputs the equivalent CLI/SDK commands and CloudFormation/Terraform templates [![github][github-logo]](https://github.com/iann0036/AWSConsoleRecorderGenerator)
+
+- [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - adds various web developer tools to the browser
+
+- [Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/) - Identify technologies on websites
+
+- [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/uaswitcher/) - Easily override the browser's User-Agent string
+
+### privacy & security
+
+- [1Password X](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/?src=collection) - The best way to experience 1Password in your browser
+
+- [AdGuard VPN](https://addons.mozilla.org/en-US/firefox/addon/adguard-vpn/) - Makes the Internet open and your data safe. Topnotch VPN from the creators of famous ad blocker.
+
+- [BitWarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/) - A secure password manager for all of your devices.
+
+- [Privacy Settings](https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/) - Alter built-in privacy settings easily with a toolbar panel. [![github][github-logo]](https://github.com/schomery/privacy-settings)
+
+
 
 ### extension development
 
@@ -243,6 +264,13 @@
 
 - [Focus On Left Tab After Closing](https://addons.mozilla.org/en-US/firefox/addon/focus-on-left-tab-aft-closing/) - Activate the left tab when a current tab is closed.
 
+### search engines
+
+= [GitHub](https://addons.mozilla.org/en-US/firefox/addon/github-search/)
+
+= [YouTube](https://addons.mozilla.org/en-US/firefox/addon/youtube-search-engine/)
+
+
 ### rss
 
 - [Feed Indicator](https://addons.mozilla.org/en-US/firefox/addon/feed-indicator/?src=search) - Adds an icon to indicate RSS/Atom feeds to address bar and previews a feed
@@ -253,11 +281,10 @@
 
 - [I'm not robot captcha clicker](https://addons.mozilla.org/en-US/firefox/addon/i-m-not-robot-captcha-clicker/) - I'm not robot captcha automatic clicker
 
-- [Privacy Settings](https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/) - Alter built-in privacy settings easily with a toolbar panel. [![github][github-logo]](https://github.com/schomery/privacy-settings)
+- [Free Download Manager](https://addons.mozilla.org/en-US/firefox/addon/free-download-manager-addon/) - Free Download Manager integration with your Firefox browser
 
 <!--Definitions-->
 
 <!-- [github-image]: https://img.icons8.com/material-outlined/20/000000/github.png -->
 [github-logo]: https://img.icons8.com/material-outlined/24/000000/github.png
 [github-url]: https://github.com/schomery/privacy-settings
-
