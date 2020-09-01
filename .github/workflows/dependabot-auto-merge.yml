@@ -1,4 +1,4 @@
-name: auto-merge
+name: dependabot-auto-merge
 
 on:
   pull_request:
