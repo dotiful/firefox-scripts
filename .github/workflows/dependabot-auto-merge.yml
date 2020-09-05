@@ -10,3 +10,4 @@ jobs:
       - uses: ahmadnassri/action-dependabot-auto-merge@v1
         with:
           target: patch
+          github-token: ${{ secrets.AUTO_MERGE }}
