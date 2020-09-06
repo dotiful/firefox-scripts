@@ -1,0 +1,25 @@
+# https://github.com/appleboy/telegram-action
+# https://github.com/Lukasss93/telegram-action
+
+
+name: telegram-action
+
+on:
+  push:
+
+jobs:
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v2
+      - name: Send message to Telegram
+        uses: Lukasss93/telegram-action@master
+        if: always()
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT: ${{ secrets.TELEGRAM_CHAT }}
+        with:
+          STATUS: ${{job.status}}
