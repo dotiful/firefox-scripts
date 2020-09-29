@@ -54,7 +54,7 @@
     "stylelint": "^13.7.2",
     "stylelint-config-stylishthemes": "^1.0.1",
     "through2": "^4.0.2",
-    "yarn": "^1.22.7"
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "format": "prettier --write '**/*.js'",
