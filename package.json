@@ -20,7 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.16",
     "@babel/preset-env": "^7.13.9",
-    "@babel/register": "^7.13.14",
+    "@babel/register": "^7.13.16",
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
     "chalk": "^4.1.0",
