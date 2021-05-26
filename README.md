@@ -119,7 +119,7 @@
 
 ### general
 
-- [Surfingkeys](https://addons.mozilla.org/en-US/firefox/addon/surfingkeys_ff/?src=search) - Map your keys for web surfing, expand your browser with javascript and keyboard [![github][github-logo]](https://github.com/)
+- [Surfingkeys](https://addons.mozilla.org/en-US/firefox/addon/surfingkeys_ff/) - Map your keys for web surfing, expand your browser with javascript and keyboard [![github][github-logo]](https://github.com/)
 
 - [Tampermonkey](https://addons.mozilla.org/ru/firefox/addon/tampermonkey/) - Tampermonkey is the world's most popular userscript manager [![github][github-logo]](https://github.com/brookhong/Surfingkeys)
 
@@ -169,7 +169,9 @@
     ----
   </details>
 
-- [Adguard AdBlocker](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/?src=search) - Unmatched adblock extension against advertising and pop-ups [![github][github-logo]](https://github.com/AdguardTeam/AdguardBrowserExtension)
+- [Adguard AdBlocker](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/) - Unmatched adblock extension against advertising and pop-ups [![github][github-logo]](https://github.com/AdguardTeam/AdguardBrowserExtension)
+
+- [SponsorBlock](https://addons.mozilla.org/en-US/firefox/addon/sponsorblock/) - Skip YouTube video sponsors [![github][github-logo]](https://github.com/ajayyy/SponsorBlock)
 
 
 ### ui
@@ -211,6 +213,8 @@
 - [1Password X](https://addons.mozilla.org/en-US/firefox/addon/1password-x-password-manager/?src=collection) - The best way to experience 1Password in your browser
 
 - [AdGuard VPN](https://addons.mozilla.org/en-US/firefox/addon/adguard-vpn/) - Makes the Internet open and your data safe. Topnotch VPN from the creators of famous ad blocker.
+
+- [KeePassXC Browser](https://addons.mozilla.org/en-US/firefox/addon/keepassxc-browser/) - Official browser plugin for the KeePassXC password manager [![github][github-logo]](https://github.com/keepassxreboot/keepassxc-browser)
 
 - [BitWarden](https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/) - A secure password manager for all of your devices.
 
@@ -256,6 +260,8 @@
     ----
   </details>
 
+- [Tiled Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/tiled-tab-groups/) - Provides tab groups / panorama functionality using the tab hide api. [![github][github-logo]](https://github.com/chzesa/tiled-tab-groups)
+
 - [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage [![github][github-logo]](https://github.com/Hau-Hau/firefox-tab-suspender)
 
 - [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
@@ -266,14 +272,16 @@
 
 ### search engines
 
-= [GitHub](https://addons.mozilla.org/en-US/firefox/addon/github-search/)
+- [Search Engine DevTools](https://github.com/mozilla-extensions/searchengine-devtools) -  A tool to help test search engine configuration changes
 
-= [YouTube](https://addons.mozilla.org/en-US/firefox/addon/youtube-search-engine/)
+- [GitHub](https://addons.mozilla.org/en-US/firefox/addon/github-search/)
+
+- [YouTube](https://addons.mozilla.org/en-US/firefox/addon/youtube-search-engine/)
 
 
 ### rss
 
-- [Feed Indicator](https://addons.mozilla.org/en-US/firefox/addon/feed-indicator/?src=search) - Adds an icon to indicate RSS/Atom feeds to address bar and previews a feed
+- [Feed Indicator](https://addons.mozilla.org/en-US/firefox/addon/feed-indicator/) - Adds an icon to indicate RSS/Atom feeds to address bar and previews a feed
 
 - [Feed Preview](https://addons.mozilla.org/en-US/firefox/addon/feed-preview/) - Indicates available RSS and Atom feeds and renders previews
 
