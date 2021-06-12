@@ -126,7 +126,6 @@
 - [Simple Translate](https://addons.mozilla.org/en-US/firefox/addon/simple-translate/) - Quickly translate selected text on web page [![github][github-logo]](https://github.com/sienori/simple-translate)
   <details>
     <summary>settings</summary>
-
     ### Web page
 
     | **key**                                     | **value** |
@@ -165,8 +164,6 @@
     ### Preview
 
     ![screenshoot](https://i.imgur.com/3czIumx.png)
-
-    ----
   </details>
 
 - [Adguard AdBlocker](https://addons.mozilla.org/en-US/firefox/addon/adguard-adblocker/) - Unmatched adblock extension against advertising and pop-ups [![github][github-logo]](https://github.com/AdguardTeam/AdguardBrowserExtension)
@@ -220,8 +217,6 @@
 
 - [Privacy Settings](https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/) - Alter built-in privacy settings easily with a toolbar panel. [![github][github-logo]](https://github.com/schomery/privacy-settings)
 
-
-
 ### extension development
 
 - [EmailThis/extension-boilerplate](https://github.com/EmailThis/extension-boilerplate) - A template for building cross browser extensions for Chrome, Opera & Firefox
@@ -245,26 +240,27 @@
 ### tabs
 
 - [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) - Use native tab discard method to automatically reduce memory usage of inactive tabs
-  <details>
-    <summary>settings</summary>
+    <details>
+      <summary>settings</summary>
 
-    ### Discarding options
+      ### Discarding options
+      | **key**                     | **value**          |
+      |-----------------------------|--------------------|
+      | discard after               | 600ms              |
+      | when number of tabs exceeds | 3                  |
+      | display in context menu     | false              |
+      | do not discard when offline | true               |
+      | toolbar click action        | discard other tabs |
+      ----
+    </details>
 
-    | **key**                     | **value**          |
-    |-----------------------------|--------------------|
-    | discard after               | 600ms              |
-    | when number of tabs exceeds | 3                  |
-    | display in context menu     | false              |
-    | do not discard when offline | true               |
-    | toolbar click action        | discard other tabs |
-    ----
-  </details>
+- [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab) -  Tree Style Tab, Show tabs like a tree. [![github][github-logo]](hthttps://github.com/piroor/treestyletab)
+
+- [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
 
 - [Tiled Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/tiled-tab-groups/) - Provides tab groups / panorama functionality using the tab hide api. [![github][github-logo]](https://github.com/chzesa/tiled-tab-groups)
 
 - [Tab Suspender](https://addons.mozilla.org/en-US/firefox/addon/ff-tab-suspender/) - Native, lightweight and performant open source extension that reduce Firefox's memory usage [![github][github-logo]](https://github.com/Hau-Hau/firefox-tab-suspender)
-
-- [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager/) - Save and restore the state of windows and tabs
 
 - [Multi-Account Containers](https://addons.mozilla.org/en-GB/firefox/addon/multi-account-containers/) - Multi-Account Containers lets you keep parts of your online life separated into color-coded tabs that preserve your privacy
 
@@ -272,11 +268,11 @@
 
 ### search engines
 
+- [Search Engines Helper](https://addons.mozilla.org/en-US/firefox/addon/search-engines-helper/) -  Export, import and add custom firefox search engines [![github][github-logo]](https://github.com/soufianesakhi/firefox-search-engines-helper)
+
 - [Search Engine DevTools](https://github.com/mozilla-extensions/searchengine-devtools) -  A tool to help test search engine configuration changes
 
-- [GitHub](https://addons.mozilla.org/en-US/firefox/addon/github-search/)
-
-- [YouTube](https://addons.mozilla.org/en-US/firefox/addon/youtube-search-engine/)
+- [Search Engine Plugins](https://mycroftproject.com) - Collection of over 25 thousand OpenSearch & Sherlock search engine plugins
 
 
 ### rss
